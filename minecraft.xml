@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="minecraft.css" type="text/css"?>
+
+
+
+<inventario>
+    <herramientas>
+        <herramienta nombre="pico" material="metal" durabilidad="70%" encantamiento="toque de seda"/>
+        <herramienta nombre="pala" material="diamante"/>
+        <herramienta nombre="espada" material="oro"/>
+    </herramientas>
+    <comidas>
+        <comida nombre="bistec" cantidad="64"/>
+        <comida nombre="zanhaoria" cantidad="1"/>
+        <comida nombre="tarta de calabaza" cantidad="33"/>
+    </comidas>    
+    <materiales>
+        <material nombre="piedra" cantidad="64"/>
+        <material nombre="piedra" cantidad="64"/>
+        <material nombre="piedra" cantidad="33"/>
+        <material nombre="tierra" cantidad="64"/>
+        <material nombre="tierra" cantidad="64"/>
+        <material nombre="tierra" cantidad="33"/>
+        <material nombre="arena" cantidad="21"/>
+    </materiales>
+    <armadura>
+        <casco material="diamante" durabilidad="65%"/>
+        <pechera material="hierro" durabilidad="65%"/>
+        <pantalones material="oro" />
+        <botas material="cuero" encantamiento="caida de pluma"/>
+    </armadura>
+</inventario>
+
+<!-- QUIERO QUE LAS PIEZAS DE ARMADURA Y LAS HERRAMIENTAS TENGAN UNA DURABILIDAD POR DEFECTO DE 100%-->
+<!-- QUIERO QUE EL ATRIBUTO MATERIAL DE LAS HERRAMIENTAS SOLO PUEDA SER "MADERA, METAL, PIEDRA, ORO Y DIAMANTE"-->
+<!-- QUIERO QUE EL ATRIBUTO MATERIAL DE LAS ARMADURAS SOLO PUEDA SER "CUERO, ORO, METAL Y DIAMANTE"-->
+<!-- QUIERO QUE LOS ELEMENTOS DE LA ARMADURA SOLO PUEDAN SER CASCO, PECHERA, PANTALONES, BOTAS-->
+<!-- QUIERO QUE EL ATRIBUTO CANTIDAD NO PUEDA TENER ESPACIOS-->
+<!-- OJO!!! EL INVENTARIO PUEDE ESTAR VACÍO-->

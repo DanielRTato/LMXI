@@ -1,0 +1,13 @@
+<?xml-stylesheet href="tarjeta.css" type="text/css"?>
+
+<tarjeta>
+    <recuadro>
+        <clase>Tarjeta DAM </clase>
+     <numero>9876 5432 1675 7569</numero>
+        <info>
+            <foto></foto>
+            <banco>UWU BANK</banco>
+        </info>
+        <nombre>Daniel Rodríguez Tato</nombre>
+        </recuadro>
+</tarjeta>

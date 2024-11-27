@@ -1,0 +1,12 @@
+nome {color: lightcoral;
+    background-color: black;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+comarca {color: aqua;}
+maxima {color: blue;}
+
+*{color: chartreuse;}
+*{background-color: #4A412A;}
+nome, comarca{ color: aliceblue;}
+comarca { color: black;}
+*{grid-auto-flow: column;}

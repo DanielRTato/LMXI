@@ -1,0 +1,14 @@
+<!ELEMENT tempo (poboacion+)>
+<!ELEMENT poboacion (nome, comarca, data+)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT comarca (#PCDATA)>
+<!ELEMENT data (maxima, minima, vento, chuvia?, prevision+)>
+<!ATTLIST data dia CDATA #REQUIRED>
+<!ELEMENT maxima (#PCDATA)>
+<!ELEMENT minima (#PCDATA)>
+<!ELEMENT vento (#PCDATA)>
+<!ELEMENT chuvia (#PCDATA)>
+<!ELEMENT prevision (estado,graos)>
+<!ATTLIST prevision hora  CDATA #IMPLIED>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT graos (#PCDATA)>

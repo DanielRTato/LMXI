@@ -1,0 +1,30 @@
+
+
+departamento {background-color: black;
+    display: block;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    float: right; width: 80%;text-align: right;
+    border-top: 200px;
+    margin-top: 50px;
+    }
+
+    nome{
+        display: inline;
+        font:italic bold 30px Georgia, serif;
+    }
+    apelido{
+        display: inline;
+        font:italic bold 30px Georgia, serif;
+        }
+    
+    cargos{
+        display: block;
+        margin-left:400px;
+
+    }
+    profesor{
+        margin: 100px;
+        margin-inline-start: 40px;
+        border-style: solid;
+    }

@@ -1,0 +1,645 @@
+<!DOCTYPE tempo SYSTEM "tiempo.dtd">
+<?xml-stylesheet href="tempo.css" type="text/css"?>
+
+<tempo>
+    <poboacion>
+    <nome>Cangas</nome>
+    <comarca>Morrazo</comarca>
+    <data dia="19-05-2023">
+    <maxima>24</maxima>
+    <minima>15</minima>
+    <vento>11 km/h</vento>
+    <prevision hora="08:00">
+    <estado>nuboso</estado>
+    <graos>16</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>nuboso</estado>
+    <graos>24</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>craros</estado>
+    <graos>20</graos>
+    </prevision>
+    </data>
+    <data dia="20-05-2023">
+    <maxima>23</maxima>
+    <minima>13</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>16</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>25</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>22</graos>
+    </prevision>
+    </data>
+    <data dia="21-05-2023">
+    <maxima>26</maxima>
+    <minima>14</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>17</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>26</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>23</graos>
+    </prevision>
+    </data>
+    <data dia="22-05-2023">
+    <maxima>28</maxima>
+    <minima>16</minima>
+    <vento>18 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>18</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>craros</estado>
+    <graos>26</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>algunha nube</estado>
+    <graos>23</graos>
+    </prevision>
+    </data>
+    <data dia="23-05-2023">
+    <maxima>29</maxima>
+    <minima>19</minima>
+    <vento>25 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>21</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>29</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>26</graos>
+    </prevision>
+    </data>
+    <data dia="24-05-2023">
+    <maxima>30</maxima>
+    <minima>19</minima>
+    <vento>32 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>23</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>30</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>nuboso</estado>
+    <graos>26</graos>
+    </prevision>
+    </data>
+    </poboacion>
+    <poboacion>
+    <nome>Mondariz</nome>
+    <comarca>Condado</comarca>
+    <data dia="19-05-2023">
+    <maxima>23</maxima>
+    <minima>16</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>craros</estado>
+    <graos>17</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>craros</estado>
+    <graos>21</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>craros</estado>
+    <graos>20</graos>
+    </prevision>
+    </data>
+    <data dia="20-05-2023">
+    <maxima>24</maxima>
+    <minima>14</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>17</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>24</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>22</graos>
+    </prevision>
+    </data>
+    <data dia="21-05-2023">
+    <maxima>26</maxima>
+    <minima>14</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>18</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>26</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>23</graos>
+    </prevision>
+    </data>
+    <data dia="22-05-2023">
+    <maxima>27</maxima>
+    <minima>17</minima>
+    <vento>18 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>18</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>craros</estado>
+    <graos>27</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>algunha nube</estado>
+    <graos>25</graos>
+    </prevision>
+    </data>
+    <data dia="23-05-2023">
+    <maxima>29</maxima>
+    <minima>20</minima>
+    <vento>25 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>22</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>29</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>26</graos>
+    </prevision>
+    </data>
+    <data dia="24-05-2023">
+    <maxima>30</maxima>
+    <minima>20</minima>
+    <vento>32 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>24</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>30</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>nuboso</estado>
+    <graos>26</graos>
+    </prevision>
+    </data>
+    </poboacion>
+    <poboacion>
+    <nome>A Golada</nome>
+    <comarca>Deza</comarca>
+    <data dia="19-05-2023">
+    <maxima>22</maxima>
+    <minima>11</minima>
+    <vento>11 km/h</vento>
+    <prevision hora="08:00">
+    <estado>nuboso</estado>
+    <graos>11</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>nuboso</estado>
+    <graos>22</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>craros</estado>
+    <graos>17</graos>
+    </prevision>
+    </data>
+    <data dia="20-05-2023">
+    <maxima>23</maxima>
+    <minima>9</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>11</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>23</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>19</graos>
+    </prevision>
+    </data>
+    <data dia="21-05-2023">
+    <maxima>24</maxima>
+    <minima>9</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>13</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>24</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>20</graos>
+    </prevision>
+    </data>
+    <data dia="22-05-2023">
+    <maxima>24</maxima>
+    <minima>9</minima>
+    <vento>7 km/h</vento>
+    <chuvia>2,6 mm</chuvia>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>12</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>chuvioso</estado>
+    <graos>24</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>chuvioso</estado>
+    <graos>20</graos>
+    </prevision>
+    </data>
+    <data dia="23-05-2023">
+    <maxima>27</maxima>
+    <minima>10</minima>
+    <vento>11 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>11</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>27</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>23</graos>
+    </prevision>
+    </data>
+    <data dia="24-05-2023">
+    <maxima>28</maxima>
+    <minima>12</minima>
+    <vento>11 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>13</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>algunha nube</estado>
+    <graos>28</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>nuboso</estado>
+    <graos>23</graos>
+    </prevision>
+    </data>
+    </poboacion>
+    <poboacion>
+    <nome>Meaño</nome>
+    <comarca>Salnés</comarca>
+    <data dia="19-05-2023">
+    <maxima>24</maxima>
+    <minima>14</minima>
+    <vento>11 km/h</vento>
+    <prevision hora="08:00">
+    <estado>algunha nube</estado>
+    <graos>14</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>23</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>nuboso</estado>
+    <graos>20</graos>
+    </prevision>
+    </data>
+    <data dia="20-05-2023">
+    <maxima>25</maxima>
+    <minima>11</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>15</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>algunha nube</estado>
+    <graos>25</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>21</graos>
+    </prevision>
+    </data>
+    <data dia="21-05-2023">
+    <maxima>26</maxima>
+    <minima>11</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>15</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>26</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>21</graos>
+    </prevision>
+    </data>
+    <data dia="22-05-2023">
+    <maxima>27</maxima>
+    <minima>13</minima>
+    <vento>7 km/h</vento>
+    <chuvia>1,9 mm</chuvia>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>15</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>craros</estado>
+    <graos>27</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>chuvia</estado>
+    <graos>22</graos>
+    </prevision>
+    </data>
+    <data dia="23-05-2023">
+    <maxima>29</maxima>
+    <minima>14</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>16</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>29</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>25</graos>
+    </prevision>
+    </data>
+    <data dia="24-05-2023">
+    <maxima>30</maxima>
+    <minima>16</minima>
+    <vento>22 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>18</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>algunha nube</estado>
+    <graos>30</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>nuboso</estado>
+    <graos>25</graos>
+    </prevision>
+    </data>
+    </poboacion>
+    <poboacion>
+    <nome>Forcarei</nome>
+    <comarca>Tabeirós-Terra de montes</comarca>
+    <data dia="19-05-2023">
+    <maxima>24</maxima>
+    <minima>14</minima>
+    <vento>11 km/h</vento>
+    <prevision hora="08:00">
+    <estado>algunha nube</estado>
+    <graos>14</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>23</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>nuboso</estado>
+    <graos>20</graos>
+    </prevision>
+    </data>
+    <data dia="20-05-2023">
+    <maxima>25</maxima>
+    <minima>11</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>14</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>algunha nube</estado>
+    <graos>25</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>21</graos>
+    </prevision>
+    </data>
+    <data dia="21-05-2023">
+    <maxima>26</maxima>
+    <minima>11</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>15</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>26</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>21</graos>
+    </prevision>
+    </data>
+    <data dia="22-05-2023">
+    <maxima>27</maxima>
+    <minima>13</minima>
+    <vento>7 km/h</vento>
+    <chuvia>1,5 mm</chuvia>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>15</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>craros</estado>
+    <graos>27</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>chuvia</estado>
+    <graos>22</graos>
+    </prevision>
+    </data>
+    <data dia="23-05-2023">
+    <maxima>29</maxima>
+    <minima>14</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>16</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>29</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>25</graos>
+    </prevision>
+    </data>
+    <data dia="24-05-2023">
+    <maxima>30</maxima>
+    <minima>16</minima>
+    <vento>22 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>18</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>algunha nube</estado>
+    <graos>30</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>nuboso</estado>
+    <graos>25</graos>
+    </prevision>
+    </data>
+    </poboacion>
+    <poboacion>
+    <nome>Moraña</nome>
+    <comarca>Caldas</comarca>
+    <data dia="19-05-2023">
+    <maxima>18</maxima>
+    <minima>8</minima>
+    <vento>11 km/h</vento>
+    <prevision hora="08:00">
+    <estado>nuboso</estado>
+    <graos>8</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>nuboso</estado>
+    <graos>18</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>nuboso</estado>
+    <graos>14</graos>
+    </prevision>
+    </data>
+    <data dia="20-05-2023">
+    <maxima>20</maxima>
+    <minima>7</minima>
+    <vento>11 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>8</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>algunha nube</estado>
+    <graos>20</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>15</graos>
+    </prevision>
+    </data>
+    <data dia="21-05-2023">
+    <maxima>20</maxima>
+    <minima>8</minima>
+    <vento>14 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>9</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>craros</estado>
+    <graos>20</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>algunha nube</estado>
+    <graos>17</graos>
+    </prevision>
+    </data>
+    <data dia="22-05-2023">
+    <maxima>20</maxima>
+    <minima>5</minima>
+    <vento>7 km/h</vento>
+    <chuvia>13 mm</chuvia>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>9</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>chuvia</estado>
+    <graos>19</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>chuvia</estado>
+    <graos>16</graos>
+    </prevision>
+    </data>
+    <data dia="23-05-2023">
+    <maxima>23</maxima>
+    <minima>7</minima>
+    <vento>11 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>8</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>soleado</estado>
+    <graos>23</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>soleado</estado>
+    <graos>19</graos>
+    </prevision>
+    </data>
+    <data dia="24-05-2023">
+    <maxima>24</maxima>
+    <minima>9</minima>
+    <vento>11 km/h</vento>
+    <prevision hora="08:00">
+    <estado>soleado</estado>
+    <graos>10</graos>
+    </prevision>
+    <prevision hora="14:00">
+    <estado>algunha nube</estado>
+    <graos>24</graos>
+    </prevision>
+    <prevision hora="20:00">
+    <estado>nuboso</estado>
+    <graos>19</graos>
+    </prevision>
+    </data>
+    </poboacion>
+    </tempo>
