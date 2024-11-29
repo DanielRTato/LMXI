@@ -1,0 +1,43 @@
+*{display: flexbox;}
+     modulo{
+      display: block;
+        margin-left: 1%;
+        background-color: black;
+        font-size: x-large;
+        color: aliceblue;
+    }
+    centro{
+        font-size: smaller;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    profesor    {
+        margin-left: 5%;
+        font-weight: bold;
+            }
+    alumnos{
+        display: block;
+    }
+
+    temas{
+        justify-content: space-around;
+        display: inline-block;
+        margin-left:  800px;
+    }
+    tema{
+        di
+    }
+    alumno{
+        display: block;
+    }
+    alumno{
+        border: 1PX solid black;
+        
+        display: block;
+    }
+    nombreC{
+        display: block;
+        width: 450px;
+    }
+    nome,apelido{
+        font-weight: bold;
+    }

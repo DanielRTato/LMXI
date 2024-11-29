@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="alumnos.css" type="text/css"?>
+<alumnos>
+  <centro>CPR Daniel Castelao</centro>
+  <modulo>Linguaxes de marcas e sistemas de xestión de información</modulo>
+  <profesor>
+       <nome>Profesor: Cedric Bixler-Zavala</nome>     
+  </profesor>
+  <alumnos>
+     <alumno>
+     <nombreC>
+         <nome>Omar</nome>
+         <apelido>Rodríguez</apelido>
+         <apelido>López</apelido>
+         </nombreC>
+         <temas>
+             <tema> UF1:Si</tema>
+             <tema> UF2:Si</tema>
+             <tema >UF3:Si</tema>
+             <tema >UF4:Si  </tema>
+         </temas>
+     </alumno>
+     <alumno>
+     <nombreC>
+         <nome>Keely</nome>
+         <apelido>Davis</apelido>
+         </nombreC>
+         <temas>
+             <tema >UF1:Si</tema>
+             <tema >UF2:Si</tema>
+             <tema >UF3:Si</tema>
+             <tema >UF4:Si</tema>
+         </temas>
+     </alumno>
+     <alumno>
+     <nombreC>
+         <nome>Paul</nome>
+         <apelido>Hinojos</apelido>
+         <apelido>González</apelido>
+         </nombreC>
+         <temas>
+             <tema >UF1:Si</tema>
+             <tema >UF2:No</tema>
+             <tema >UF3:Si</tema>
+             <tema >UF4:Si</tema>
+         </temas>
+     </alumno>
+     <alumno>
+     <nombreC>
+         <nome>Tony</nome>
+         <apelido>Hajjar</apelido>
+         </nombreC>
+         <temas>
+             <tema> UF1:No</tema>
+             <tema> UF2:Si</tema>
+             <tema >UF3:Si</tema>
+             <tema >UF4:Si</tema>
+         </temas>
+     </alumno>
+     <alumno>
+     <nombreC>
+         <nome>Jim</nome>
+         <apelido>Ward</apelido>
+         </nombreC>
+         <temas>
+             <tema> UF1:Si</tema>
+             <tema> UF2:Si</tema>
+             <tema> UF3:Si</tema>
+             <tema> UF4:Si</tema>
+         </temas>
+     </alumno>     
+     <alumno>
+     <nombreC>
+         <nome>Jarret</nome>
+         <apelido>Wrenn</apelido>
+         </nombreC>
+         <temas>
+             <tema> UF1:No</tema>
+             <tema> UF2</tema>
+             <tema> UF3:No</tema>
+             <tema> UF4:Si</tema>
+         </temas>
+     </alumno>
+  </alumnos>
+</alumnos>
