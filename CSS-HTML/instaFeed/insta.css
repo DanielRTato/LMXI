@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.pagina {
+   width: 400px;
+   border-radius: 10px;
+   border: 1px solid #e0e0e0;
+}
+.header {
+    display: flex;
+   
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.fotoper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.usuario {
+   flex-grow: 1;
+}
+.options {
+    margin-left: auto;
+    cursor: pointer;
+    
+
+}
+.post{
+    width: 100%;
+    height: auto;
+}
+.iconos{
+    display: flex;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.megusta{
+    margin-right: 4px;
+}
+.guardar{
+    margin-left: auto;
+}
+.compartir{
+    margin-left: 4px;
+}
