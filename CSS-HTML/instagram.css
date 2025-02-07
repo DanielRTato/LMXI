@@ -1,39 +1,51 @@
-.todo{
+.todo {
     display: flex;
-    align-items: center;
-    background-color:white;
+    background-color: white;
     border: 1px solid black;
     flex-direction: column;
     width: 32%;
     margin: 0 auto;
-}  
-.imagen_per{
-    justify-content: flex-start;
+}
+
+.imagen_per {
     display: flex;
-     width: 10%;
+    width: 34%;
+    padding: 0;
+    margin: 0;
 }
 
-
-.cabezara{
-   
+.texto1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: left;
 }
 
-.puntitos{
-   
+.cabezara {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
 }
 
-.foto{
+.options {
+    display: flex;
+
+}
+
+.foto {
     width: 100%;
     height: 100%;
 }
-
-.iconos{
+.iconos {
     display: flex;
     justify-content: space-between;
-    width: 610px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-
-texto{
-    
+.gustar {
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
 }
-
