@@ -1,26 +1,15 @@
 body{
-  width: 100%;
-  
-  margin: 0 auto;
-  display: grid;
-  height: 100vh;
+    margin: 40;
 }
-
-
-.chessboard{
+.wrapper{
     display: grid;
-    width: 80vw;
-   height: 80vw;
-   border: 1px solid black;
-   grid-template-rows: repeat(8, 1fr);
-  margin-right: 80px;
-    
-}
-
-.row{
-    display: grid;
+    grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
 }
-.box{
-   border: 1px solid black;
+.item{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 4px;
 }
