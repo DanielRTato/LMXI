@@ -1,0 +1,26 @@
+body{
+  width: 100%;
+  
+  margin: 0 auto;
+  display: grid;
+  height: 100vh;
+}
+
+
+.chessboard{
+    display: grid;
+    width: 80vw;
+   height: 80vw;
+   border: 1px solid black;
+   grid-template-rows: repeat(8, 1fr);
+  margin-right: 80px;
+    
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+.box{
+   border: 1px solid black;
+}
