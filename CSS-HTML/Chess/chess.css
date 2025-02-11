@@ -1,16 +1,18 @@
 body{
-    margin: 40;
+    margin: 69px;
 }
 .wrapper{
     display: grid;
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(8, 1fr);
-    gap: 10px;
+    gap: 1px;
 }
 .item{
     text-align: center;
     background-color: antiquewhite;
     padding: 5px;
+   
+    
   
    
 }
