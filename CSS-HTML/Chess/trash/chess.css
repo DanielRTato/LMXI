@@ -1,4 +1,4 @@
-body{
+    body{
     margin: 69px;
 }
 .wrapper{
@@ -6,6 +6,7 @@ body{
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(8, 1fr);
     gap: 1px;
+    margin: 100px;
 }
 .item{
     text-align: center;
