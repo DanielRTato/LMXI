@@ -12,11 +12,11 @@ body{
 .tablero{
     width: 600px;
     height: 600px;
-    background-color: blue;
+    background-color: white;
     flex-direction: column;
     display: flex;
     padding-left: 60px;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 .row{
     height: 12.5%;
@@ -24,7 +24,7 @@ body{
     display: flex;
 }
 .blanca{
-    background-color: white;
+    background-color: #d9ceb8;
     height: 100%;
     width: 10%;
     justify-content: center;
@@ -32,7 +32,7 @@ body{
     display: flex;
 }
 .negra{
-    background-color: black;
+    background-color: #040404;
     height: 100%;
     width: 10%;
     display: flex;
@@ -44,7 +44,26 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
-  ;
+    font-family: "Pixelify Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #040404;
+  width: 10%;
+
+}
+.numero{
+    width: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color:#040404;
+    margin-left: 10%;
 }
 img{
     scale: 2;
