@@ -7,7 +7,7 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: rebeccapurple;
+    background-color: #64183F;
 }
 .tablero{
     width: 600px;
@@ -53,17 +53,20 @@ body{
 
 }
 .numero{
-    width: 1%;
-    display: flex;
-    justify-content: center;
+    
+     display: flex;
+     justify-content: center;
     align-items: center;
-    color: white;
-    font-family: "Pixelify Sans", serif;
-    font-optical-sizing: auto;
+      color: white;
+     font-family: "Pixelify Sans", serif;
+     font-optical-sizing: auto;
     font-weight: weight;
-    font-style: normal;
-    color:#040404;
-    margin-left: 10%;
+        font-style: normal;
+        color: #040404;
+        height: 100%;
+        width: 10%; 
+       
+    
 }
 img{
     scale: 2;
