@@ -10,7 +10,7 @@ function baraja(){
 baraja()
 
 function baraja2() {
-    let valores = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "sota", "caballo", "rey"];
+    let valores = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "sota", "caballo", "rey"];
     let palos = ["espadas", "bastos", "copas", "oros"];
     let barajas = [];
 
