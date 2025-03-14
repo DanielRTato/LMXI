@@ -1,8 +1,8 @@
 function baraja(){
-    let barajas = [["A", "corazones"], ["2", "corazones"], ["3", "corazones"], ["4", "corazones"], ["5", "corazones"], ["6", "corazones"], ["7", "corazones"], ["8", "corazones"], ["9", "corazones"], ["10", "corazones"], ["J", "corazones"], ["Q", "corazones"], ["K", "corazones"],
-     ["A", "diamantes"], ["2", "diamantes"], ["3", "diamantes"], ["4", "diamantes"], ["5", "diamantes"], ["6", "diamantes"], ["7", "diamantes"], ["8", "diamantes"], ["9", "diamantes"], ["10", "diamantes"], ["J", "diamantes"], ["Q", "diamantes"], ["K", "diamantes"],
-      ["A", "treboles"], ["2", "treboles"], ["3", "treboles"], ["4", "treboles"], ["5", "treboles"], ["6", "treboles"], ["7", "treboles"], ["8", "treboles"], ["9", "treboles"], ["10", "treboles"], ["J", "treboles"], ["Q", "treboles"], ["K", "treboles"],
-       ["A", "picas"], ["2", "picas"], ["3", "picas"], ["4", "picas"], ["5", "picas"], ["6", "picas"], ["7", "picas"], ["8", "picas"], ["9", "picas"], ["10", "picas"], ["J", "picas"], ["Q", "picas"], ["K", "picas"]];
+    let barajas = [["A", "espadas"], ["2", "espadas"], ["3", "espadas"], ["4", "espadas"], ["5", "espadas"], ["6", "espadas"], ["7", "corazonespadases"], ["8", "espadas"], ["9", "espadas"], ["10", "espadas"], ["J", "espadas"], ["Q", "espadas"], ["K", "corespadasazones"],
+     ["A", "bastos"], ["2", "bastos"], ["3", "bastos"], ["4", "bastos"], ["5", "bastos"], ["6", "bastos"], ["7", "bastos"], ["8", "bastos"], ["9", "bastos"], ["10", "bastos"], ["J", "bastos"], ["Q", "bastos"], ["K", "bastos"],
+      ["A", "copas"], ["2", "copas"], ["3", "copas"], ["4", "copas"], ["5", "copas"], ["6", "copas"], ["7", "copas"], ["8", "copas"], ["9", "copas"], ["10", "copas"], ["J", "copas"], ["Q", "copas"], ["K", "copas"],
+       ["A", "oros"], ["2", "oros"], ["3", "oros"], ["4", "oros"], ["5", "oros"], ["6", "picas"], ["7", "oros"], ["8", "oros"], ["9", "oros"], ["10", "oros"], ["J", "oros"], ["Q", "oros"], ["K", "porosicas"]];
        
        console.log(barajas);
 }
@@ -10,8 +10,8 @@ function baraja(){
 baraja()
 
 function baraja2() {
-    let valores = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-    let palos = ["corazones", "diamantes", "treboles", "picas"];
+    let valores = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "sota", "caballo", "rey"];
+    let palos = ["espadas", "bastos", "copas", "oros"];
     let barajas = [];
 
     for (let i = 0; i < valores.length; i++) {
