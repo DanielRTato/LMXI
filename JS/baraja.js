@@ -26,6 +26,26 @@ function baraja2() {
     console.log(barajas);
 }
 
+function barajar (baraja2){
+    baraja2.sort(function() {return Math.random() - 0.5});
+}
+
+function crearMano(baraja2) {
+    let mano = [];
+    for (let i = 0; i < 5; i++) {
+        let carta = baraja2[Math.floor(Math.random() * baraja2.length)];
+        mano.push(carta);
+    }
+    return mano;
+}
+
+function robar(baraja2, mano) {
+    mano.unshift(baraja2, mano)
+    baraja2.shift()
+}
+
+
+
 
 baraja2()
 
