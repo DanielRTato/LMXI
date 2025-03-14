@@ -33,6 +33,9 @@ if (victoriasP1 === 2) {
 }
 
 /* 
+Control + k +c para comentar todo
+Control + k + u para descomentar todo
+
     let [manoP1, manoP2] = pideMano()
 
     if ((manoP1 !== "piedra" && manoP1 !== "papel" && manoP1 !== "tijera") || (manoP2 !== "piedra" && manoP2 !== "papel" && manoP2 !== "tijera")) {
