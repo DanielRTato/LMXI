@@ -1,18 +1,33 @@
-let quien = ["Una tortuga", "Mi abuela", "Un payaso"];
-let que = ["me robó", "me quemó", "me rompió"];
-let cuando = ["ayer", "hace un rato", "cuando estaba de vacaciones"];
-let botonGenerar = document.querySelector("#generar"); // Renombrado para mayor claridad
-let frase = document.querySelector("#respuesta");
+function aleatorio(array){
 
-function generarExcusa() {
-    let quienIndex = Math.floor(Math.random() * quien.length);
-    let queIndex = Math.floor(Math.random() * que.length);
-    let cuandoIndex = Math.floor(Math.random() * cuando.length);
-
-    let nuevaExcusa = quien[quienIndex] + " " + que[queIndex] + " " + cuando[cuandoIndex]; 
-    console.log(nuevaExcusa);
-
-    frase.innerHTML = nuevaExcusa; 
+    return array[(Math.floor(Math.random()*array.length))];
 }
 
-botonGenerar.addEventListener("click", generarExcusa);
+function quien() {
+    let quien = ["Una tortuga", "Mi abuela", "Un payaso"]
+
+    return aleatorio(quien)
+} 
+
+function que() {
+    let que = ["me robó", "me quemó", "me rompió"]
+
+    return aleatorio(que)
+}
+
+function cuando() {
+    let cuando = ["ayer", "hace un rato", "cuando estaba de vacaciones"];
+
+
+    return aleatorio(cuando)
+}
+
+let botonGenerar = document.querySelector("#generar"); 
+let frase = document.querySelector("#texto");
+
+function generarExcusa() {
+    frase.innerHTML = quien, que, cuando
+}
+
+
+botonGenerar.addEventListener("click", generarExcusa());
