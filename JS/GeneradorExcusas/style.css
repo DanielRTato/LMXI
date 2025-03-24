@@ -1,0 +1,30 @@
+body {
+        
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#texto {
+    font-size: 24px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#generar {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#generar:hover {
+    background: #45a049;
+}
