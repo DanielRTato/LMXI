@@ -22,12 +22,12 @@ function cuando() {
     return aleatorio(cuando)
 }
 
+
+
+function generarExcusa() {
+    frase.innerHTML = quien() + " " + que() + " " + cuando();
+}
 let botonGenerar = document.querySelector("#generar"); 
 let frase = document.querySelector("#texto");
 
-function generarExcusa() {
-    frase.innerHTML = quien, que, cuando
-}
-
-
-botonGenerar.addEventListener("click", generarExcusa());
+botonGenerar.addEventListener("click", generarExcusa);
