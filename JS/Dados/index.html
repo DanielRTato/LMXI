@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de dados</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Generador de dados</h1>
+ 
+    <div id="programa">
+      <h1>Generador de dados</h1>
+      <label for="">Número de dados</label>
+      <input  id="numDados" type="number" min="1" max="6" value="1">
+      <button id="boton" onclick="tirarDado()">Tirar dado</button>
+      <div id="resultado"></div>
+      <div id="imagenes"></div>
+    </div>
 
-    <label for="cdados">Número de dados:</label>
-    <input type="number" id="cdados" value="10" min="1" max="10">
+    <script src="generadorDados.js"></script>
 
-    <br>    
-    <br>
-
-    <label for="ccaras">Número de caras:</label>
-  <input type="number" id="ccaras" value="6" min="1"  max="6" >
+   
     
 </body>
 </html>

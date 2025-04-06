@@ -1,0 +1,27 @@
+#programa{
+    font-family: Arial;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#boton{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(195, 53%, 60%);
+    font-weight: bold;
+    cursor: pointer;
+}
+#boton:hover{
+    background-color: hsl(195, 53%, 70%);
+}
+#boton:active{
+    background-color: hsl(195, 53%, 80%);
+}
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
