@@ -10,9 +10,13 @@ function tirarDado(){
         const valor = Math.floor(Math.random() * 6) + 1; //Math.floor() redondea hacia abajo asi que sumo 1 
         console.log(valor) //borrar
         valores.push(valor)
+        imagenesDados.push(`<img src="img/${valor}.png">`)
+
     }
+    console.log(valores) //borrar
 
-
+    resultado.textContent =  `Dado: ${valores.join(', ')}`;
+    imagenes.innerHTML = imagenesDados.join('')
 
 }
 
