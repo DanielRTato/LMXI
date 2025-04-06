@@ -1,0 +1,2 @@
+/* que te deje elegir el numero de dados
+*/

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Moongalator';
+    src: url('Moogalator.ttf') format('truetype');
+}
+
+.boton1 {
+    all: unset; 
+    font-family: 'Moongalator';
+    
+    
+    background-image: url('papel.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+}
+
+.boton1:hover {
+    filter: grayscale(56%) sepia(48%) saturate(369%) contrast(351%);
+}
+
+.boton1:active {
+    transform: scale(0.9);
+}
