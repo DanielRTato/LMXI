@@ -1,10 +1,19 @@
 function tirarDado(){
+    const boton = document.getElementById("boton");
+    boton.disabled = true;
+    //forma cutre para dejar que el sonido se reproduzca entero
+    setTimeout(() => {
+        boton.disabled = false;
+    }, 1000);
+
 
     const numDados = document.getElementById("numDados").value
     const resultado = document.getElementById("resultado")
     const imagenes = document.getElementById("imagenes")
     const valores = []
     const imagenesDados = []
+
+    new Audio('img/rolling-dice.mp3').play();
 
     for(let i = 0; i <numDados; i++){
         const valor = Math.floor(Math.random() * 6) + 1; //Math.floor() redondea hacia abajo asi que sumo 1 
@@ -15,9 +24,11 @@ function tirarDado(){
     }
     console.log(valores) //borrar
     
-    new Audio('img/rolling-dice.mp3').play();
+    
     resultado.textContent =  `Resultado: ${valores.join(', ')}`;
     imagenes.innerHTML = imagenesDados.join('')
+
+    
 
 }
 
