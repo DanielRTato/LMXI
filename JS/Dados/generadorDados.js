@@ -14,8 +14,9 @@ function tirarDado(){
 
     }
     console.log(valores) //borrar
-
-    resultado.textContent =  `Dado: ${valores.join(', ')}`;
+    
+    new Audio('img/rolling-dice.mp3').play();
+    resultado.textContent =  `Resultado: ${valores.join(', ')}`;
     imagenes.innerHTML = imagenesDados.join('')
 
 }

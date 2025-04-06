@@ -1,8 +1,15 @@
-#programa{
-    font-family: Arial;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff; 
+}
+#programa {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 #boton{
     font-size: 1.5rem;
@@ -24,4 +31,14 @@ input{
     width: 150px;
     text-align: center;
     font-weight: bold;
+}
+#resultado{
+    margin: 25px;
+    font-size: 1.8rem;
+    color: #333;
+}
+#imagenes img{
+    margin: 5px;
+    width: 150px;
+    max-width: 90vw;
 }
