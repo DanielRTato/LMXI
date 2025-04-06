@@ -31,4 +31,15 @@ function tirarDado(){
     
 
 }
+function toggleModoOscuro() {
+    const body = document.body;
+    const boton = document.getElementById("modoOscuro");
 
+    body.classList.toggle('modo-oscuro');
+
+    if (body.classList.contains('modo-oscuro')) {
+        boton.textContent = '☀️ Modo Claro';
+    } else {
+        boton.textContent = '🌙 Modo Oscuro';
+    }
+}

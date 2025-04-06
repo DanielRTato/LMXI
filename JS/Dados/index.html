@@ -7,19 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+    <button id="modoOscuro" onclick="toggleModoOscuro()">🌙 Modo Oscuro</button>
     <div id="programa">
-      <h1>Generador de dados</h1>
-      <label for="">Número de dados</label>
-      <input  id="numDados" type="number" min="1" max="10" value="1">
-      <button id="boton" onclick="tirarDado()">Tirar dado</button>
-      <div id="resultado"></div>
-      <div id="imagenes"></div>
+        <h1>Generador de dados</h1>
+        <label for="">Número de dados</label>
+        <input id="numDados" type="number" min="1" max="10" value="1">
+        <button id="boton" onclick="tirarDado()">Tirar dado</button>
+        <div id="resultado"></div>
+        <div id="imagenes"></div>
     </div>
-
     <script src="generadorDados.js"></script>
-
-   
-    
 </body>
 </html>
