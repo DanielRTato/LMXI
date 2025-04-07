@@ -1,7 +1,7 @@
 function tirarDado(){
     const boton = document.getElementById("boton");
     boton.disabled = true;
-    //forma cutre para dejar que el sonido se reproduzca entero
+    //desabilitamos el boton para dejar que el sonido se reproduzca entero
     setTimeout(() => {
         boton.disabled = false;
     }, 1000);
