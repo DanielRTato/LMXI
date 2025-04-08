@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Modificando HTML con JavaScript</title>
+  <style>
+    #miParrafo { color: black; }
+  </style>
+</head>
+<body>
+
+  <h2 id="miTitulo">Título original</h2>
+  <p id="miParrafo">Este es un párrafo de ejemplo.</p>
+  <img id="miImagen" src="imagen1.jpg" width="150">
+  <input type="text" id="miInput" value="Texto inicial">
+  <div id="contenedor"></div>
+
+  <br>
+
+  <button onclick="cambiarContenido()">Cambiar contenido</button>
+  <button onclick="cambiarEstilo()">Cambiar estilo</button>
+  <button onclick="cambiarAtributo()">Cambiar imagen</button>
+  <button onclick="ocultar()">Ocultar párrafo</button>
+  <button onclick="mostrar()">Mostrar párrafo</button>
+  <button onclick="crearElemento()">Añadir párrafo</button>
+  <button onclick="eliminarElemento()">Eliminar título</button>
+  <button onclick="modificarInput()">Modificar input</button>
+
+  <script src="modificandoConBotones.js"></script>
+
+</body>
+</html>
