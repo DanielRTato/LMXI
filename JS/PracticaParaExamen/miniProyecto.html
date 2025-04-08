@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tareas</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    li { margin-top: 5px; }
+    button { margin-left: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>📝 Lista de Tareas</h2>
+  <input type="text" id="nuevaTarea" placeholder="Escribe una tarea...">
+  <button onclick="agregarTarea()">Agregar</button>
+
+  <ul id="listaTareas">
+    <!-- Tareas aparecerán aquí -->
+  </ul>
+
+  <script>
+    function agregarTarea() {
+      let texto = document.getElementById("nuevaTarea").value;
+      if (texto.trim() === "") return;
+
+      let lista = document.getElementById("listaTareas");
+
+      let nueva = document.createElement("li");
+      nueva.textContent = texto;
+
+      let btn = document.createElement("button");
+      btn.textContent = "❌";
+      btn.onclick = function() {
+        lista.removeChild(nueva);
+      };
+
+      nueva.appendChild(btn);
+      lista.appendChild(nueva);
+
+      document.getElementById("nuevaTarea").value = "";
+    }
+  </script>
+
+</body>
+</html>
