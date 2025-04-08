@@ -150,7 +150,6 @@ numeros.forEach(n => console.log(n));
 
 ---
 
-<<<<<<< HEAD
 ### 13. Otros Conceptos Útiles
 
 #### Template Strings (Plantillas de texto con variables)
@@ -195,8 +194,6 @@ console.log(obj.nombre); // "Laura"
 
 ---
 
-
-=======
 ### Consejos para el Examen:
 - Cierra siempre etiquetas y usa `;` en JavaScript.
 - Para modificar HTML: `innerHTML`, `style`, `value`, etc.
@@ -204,5 +201,5 @@ console.log(obj.nombre); // "Laura"
 - Usa eventos con `onclick` o `addEventListener`.
 - Si tienes que escribir HTML con script, pon `<script>` al final del `<body>`.
 - Revisa los errores en consola si algo no te funciona.
->>>>>>> e5112812965b3627ff4a84e78e071232c813567b
+- Lee bien los enunciados y prueba siempre tu código en pequeños bloques.
 
