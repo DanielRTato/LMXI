@@ -1,0 +1,46 @@
+<!-- Este es el archivo HTML principal para la aplicación de la Baraja Española -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos básicos del documento -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el diseño sea responsivo -->
+    <title>Baraja Española</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+<body>
+    <!-- Contenedor principal del programa -->
+    <div id="programa">
+        <h1>Baraja Española</h1> <!-- Título principal de la página -->
+
+        <!-- Botón para barajar la baraja -->
+        <button id="barajar" onclick="barajar(barajaEspañola); actualizarVista();">
+            Barajar
+        </button>
+
+        <!-- Botón para robar la primera carta del mazo -->
+        <button id="robar" onclick="robar(barajaEspañola, mano); actualizarVista();">
+            Robar Carta
+        </button>
+
+        <!-- Botón para robar una carta aleatoria del mazo -->
+        <button id="robarAleatoria" onclick="robarAleatoria(barajaEspañola, mano); actualizarVista();">
+            Robar Carta Aleatoria
+        </button>
+
+        <!-- Sección para mostrar las cartas restantes en el mazo -->
+        <div id="mazoRestante">
+            <h2>Mazo Restante</h2> <!-- Subtítulo para el mazo restante -->
+            <p id="mazo"></p> <!-- Aquí se mostrará el contenido del mazo restante -->
+        </div>
+
+        <!-- Sección para mostrar las cartas en la mano del jugador -->
+        <div id="manoActual">
+            <h2>Mano Actual</h2> <!-- Subtítulo para la mano actual -->
+            <p id="mano"></p> <!-- Aquí se mostrará el contenido de la mano -->
+        </div>
+    </div>
+
+    <!-- Archivo JavaScript que contiene la lógica del programa -->
+    <script src="barajaEspanola.js"></script>
+</body>
+</html>
