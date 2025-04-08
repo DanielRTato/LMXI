@@ -9,7 +9,7 @@ function cambiarContenido() {
   }
 
   function cambiarAtributo() {
-    document.getElementById("miImagen").src = "dsf";
+    document.getElementById("miImagen").src = "imagen2.jpg";
   }
 
   function ocultar() {
