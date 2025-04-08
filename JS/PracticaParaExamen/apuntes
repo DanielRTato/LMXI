@@ -1,0 +1,160 @@
+## Apuntes para el Examen de JavaScript - 1º DAM (Lenguaje de Marcas)
+
+### 1. Tipos de Datos Básicos
+```js
+let numero = 42;              // Number
+let texto = "Hola";           // String
+let booleano = true;          // Boolean
+let indefinido;               // undefined
+let nulo = null;              // null
+```
+
+---
+
+### 2. Variables
+```js
+let x = 10;       // se puede modificar
+const y = 5;      // constante, no cambia
+```
+
+---
+
+### 3. Operadores Comunes
+```js
++  -  *  /  %     // Aritméticos
+==  ===           // Comparación (=== compara tipo también)
+!=  !==
+>  <  >=  <=
+```
+
+---
+
+### 4. Condicionales
+```js
+if (x > 5) {
+  console.log("Mayor que 5");
+} else {
+  console.log("Menor o igual que 5");
+}
+```
+
+---
+
+### 5. Bucles
+```js
+// for
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// while
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+```
+
+---
+
+### 6. Funciones
+```js
+function saludar(nombre) {
+  return "Hola " + nombre;
+}
+
+let mensaje = saludar("Elizabeth");
+console.log(mensaje);
+```
+
+---
+
+### 7. Eventos en HTML
+```html
+<button onclick="saludar()">Saludar</button>
+
+<script>
+  function saludar() {
+    alert("¡Hola!");
+  }
+</script>
+```
+
+---
+
+### 8. Selección de Elementos del DOM
+```js
+document.getElementById("miId");            // Por ID
+document.getElementsByClassName("clase");   // Por clase
+document.getElementsByTagName("p");         // Por etiqueta
+document.querySelector("div p");            // Primer elemento que coincida
+```
+
+---
+
+### 9. addEventListener()
+```js
+document.getElementById("miBoton").addEventListener("click", function() {
+  alert("Has hecho clic");
+});
+```
+
+---
+
+### 10. Arrays y Objetos
+```js
+let frutas = ["manzana", "pera", "plátano"];
+console.log(frutas[1]); // "pera"
+
+let persona = { nombre: "Ana", edad: 30 };
+console.log(persona.nombre); // "Ana"
+```
+
+---
+
+### 11. Métodos Útiles de Arrays
+```js
+frutas.push("kiwi");      // Añadir
+frutas.pop();             // Quitar el último
+frutas.length;            // Tamaño
+frutas.includes("pera");  // true
+```
+
+---
+
+### 12. Trabajando con Arrays
+```js
+let numeros = [1, 2, 3, 4, 5];
+
+// Recorrer con for
+for (let i = 0; i < numeros.length; i++) {
+  console.log(numeros[i]);
+}
+
+// Recorrer con for...of
+for (let num of numeros) {
+  console.log(num);
+}
+
+// map: crear nuevo array
+let dobles = numeros.map(n => n * 2);
+console.log(dobles);
+
+// filter: filtrar valores
+let mayores = numeros.filter(n => n > 2);
+console.log(mayores);
+
+// forEach: recorrer sin devolver nada
+numeros.forEach(n => console.log(n));
+```
+
+---
+
+### Consejos para el Examen:
+- Cierra siempre etiquetas y usa `;` en JavaScript.
+- Para modificar HTML: `innerHTML`, `style`, `value`, etc.
+- Usa `getElementById` para seleccionar elementos.
+- Usa eventos con `onclick` o `addEventListener`.
+- Si tienes que escribir HTML con script, pon `<script>` al final del `<body>`.
+- Revisa los errores en consola si algo no te funciona.
+
