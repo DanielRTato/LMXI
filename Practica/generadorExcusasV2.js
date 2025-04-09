@@ -1,25 +1,28 @@
-let excusa = document.getElementById("excusa")
+const excusa = document.getElementById("excusa");
+const QUIENES = ["Q1", "Q2", "Q3"];
+const ACCIONES = ["k1", "k2", "k3"];
+const TIEMPOS = ["ayer", "hoy", "mañana"];
 
-
-function opcionAleatorio (array){
-    return array[(Math.floor(Math.random()*array.length))]
+function opcionAleatoria(array) {
+  return array[Math.floor(Math.random() * array.length)];
 }
 
-function quien (){
-    let quien = ["Q1" ,"Q2" ,"Q3"]
-return opcionAleatorio(quien)
+function quien() {
+  return opcionAleatoria(QUIENES);
 }
 
 function que() {
-    let que = ["k1", "k2", "k3"]
-return opcionAleatorio(que)
-}
-function cuando() {
-    let cuando = ["ayer", "hoy", "mañana"]
-return opcionAleatorio (cuando)
+  return opcionAleatoria(ACCIONES);
 }
 
-function generarExcusa(){
-    excusa.innerHTML = quien()+ " " + " " +  que() + " " + cuando()
+function cuando() {
+  return opcionAleatoria(TIEMPOS);
 }
+
+function generarExcusa() {
+  if (!excusa) {
+    console.error("Elemento 'excusa' no encontrado");
+    return;
+  }
+  excusa.innerHTML = quien() + " " + que() + " " + cuando();}
 
