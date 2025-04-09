@@ -20,6 +20,19 @@
     filter: grayscale(56%) sepia(48%) saturate(369%) contrast(351%);
 }
 
-.boton1:active {
+.boton1:hover {
     transform: scale(0.9);
+    background-image: url("imagen3.jpg");
+}
+
+.boton2{
+    background-image: url("papel.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+}
+.boton2:hover{
+    background-image: url("imagen3.jpg");
 }
