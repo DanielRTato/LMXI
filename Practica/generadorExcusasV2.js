@@ -1,8 +1,15 @@
-let excusa = document.getElementById("excusa")
+const excusa = document.getElementById("excusa");
+
+const QUIENES = ["Q1", "Q2", "Q3"];
+const ACCIONES = ["k1", "k2", "k3"];
+const TIEMPOS = ["ayer", "hoy", "mañana"];
+const contadorElement = document.getElementById("contador"); 
+
+let contador = 0;
 
 
-function opcionAleatorio (array){
-    return array[(Math.floor(Math.random()*array.length))]
+function opcionAleatoria(array) {
+  return array[Math.floor(Math.random() * array.length)];
 }
 
 function quien() {
@@ -17,7 +24,9 @@ function cuando() {
   return opcionAleatoria(TIEMPOS);
 }
 
-function generarExcusa(){
-    excusa.innerHTML = quien()+ " " + " " +  que() + " " + cuando()
+function generarExcusa() {
+  contador ++
+  excusa.innerHTML = quien() + " " + que() + " " + cuando();
+  contadorElement.textContent = "Contador: " + contador;
 }
 
