@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrayLiteral = [6,9,3,4,5];
+        const arrayLiteral2 = [1,2,3,4,5,]
+        //arrayLiteral2 = [0,1,2,3] esto da errror
+        arrayLiteral2[0] = 0; // esta es la manera de modificar un array const
+        console.log(arrayLiteral2);
+
+        console.log(arrayLiteral.length);
+        console.log(arrayLiteral2.toString())
+        console.log(arrayLiteral2.join(' - '))
+
+        console.log(arrayLiteral.sort()); //modifica el array
+        console.log(arrayLiteral.reverse())
+        console.log(arrayLiteral.toSorted())
+
+
+        arrayLiteral.push(1); //añade al final del array
+        console.log(arrayLiteral)
+        arrayLiteral.pop();
+        console.log(arrayLiteral); //elimina el ultimo
+
+
+        arrayLiteral.unshift(1); //añade por el principio
+        console.log(arrayLiteral) 
+        arrayLiteral.shift(); //elimina el primero
+        console.log(arrayLiteral) 
+
+        //delete arrayLiteral[2]; //deja un hueco vacio
+        console.log(arrayLiteral)
+
+        //froma clasica de recorrer un array
+        for (let i = 0; i<  arrayLiteral.length; i++){
+            console.log(arrayLiteral[i])
+        }
+
+        console.log("Recorriendo el array con un forEach")
+        arrayLiteral.forEach(elemento => {
+            console.log(elemento)
+        });
+
+        let arrayMapeado = arrayLiteral.map(elemento => elemento * 2);
+            console.log(arrayMapeado);
+        
+        let arrayFiltrado = arrayLiteral.filter (elemento => elemento > 3)
+        console.log(arrayFiltrado)
+
+        // formas de buscar en el array 
+        console.log(arrayLiteral);
+        let index = arrayLiteral.indexOf(3); //muestr el index del elemento '3' // si hubiese varios elementos 3 y quieres saber el ultimo lastIndexOf
+        console.log(index)
+
+        let incluido = arrayLiteral.includes(5);
+        console.log(incluido)
+
+    </script>
+</body>
+</html>
