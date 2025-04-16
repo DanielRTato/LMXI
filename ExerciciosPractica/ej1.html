@@ -8,17 +8,44 @@
 <body>
     <h1>Elige un número del 1 al 100</h1>
 
-    <input type="number" id="adivina" placeholder="Escribe un número">
-    <button onclick="mostrarNumero()">Enviar</button>
+    <input type="number" id="adivina"  min="1" max="100" placeholder="Escribe un número (1-100)">
+    <button onclick="comprobar()">Click</button>
+    <button onclick="resetear()">Reiniciar</button>
+
+    <p id="MasOMenos"></p>
+    <p id="intentos"></p>
 
     <script>
-        const numIntento = document.getElementById("adivina").value
-        console.log(numIntento)
-
         const numAleatorio = Math.floor(Math.random() * 100) + 1;
         console.log(numAleatorio)
+        let contador = 0;
 
-        if (numIntento >  )
+        function comprobar(){
+            let numIntento = parseInt(document.getElementById("adivina").value)
+           
+
+             if (numIntento > numAleatorio) {
+            document.getElementById("MasOMenos").innerHTML = "MENOS"
+            contador +=1
+            document.getElementById("intentos").innerHTML = contador
+           
+        }
+        else if (numIntento < numAleatorio){
+            document.getElementById("MasOMenos").innerHTML = "MAIS"
+            contador +=1
+            document.getElementById("intentos").innerHTML = contador
+            
+        }else {
+            document.getElementById("MasOMenos").innerHTML = "GAÑACHES!"
+        }
+
+        }
+
+        function resetear() {
+  location.reload(); // un poco cutre
+}
+
+      
         
     </script>
 </body>
