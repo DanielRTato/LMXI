@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej3 baraja</title> 
+</head>
+<body>
+ 
+    <div id="programa">
+        <h1>Baraja Española</h1> 
+
+        <!-- Botón para barajar la baraja -->
+        <button id="barajar" onclick="barajar(barajaEspañola); actualizarVista();">
+            Barajar
+        </button>
+
+        <!-- Botón para robar la primera carta del mazo -->
+        <button id="robar" onclick="robar(barajaEspañola, mano); actualizarVista();">
+            Robar Carta
+        </button>
+
+        <button id="xenararMan" onclick="xenerarMan(); actualizarVista()">
+            Xenera unha man de 7 cartas aleatorias
+        </button>
+
+        <!-- Botón para robar una carta aleatoria del mazo -->
+        <button id="robarAleatoria" onclick="robarAleatoria(barajaEspañola, mano); actualizarVista();">
+            Robar Carta Aleatoria
+        </button>
+
+        <!-- Sección para mostrar las cartas restantes en el mazo -->
+        <div id="mazoRestante">
+            <h2>Mazo Restante</h2>
+            <p id="mazo"></p> <!-- Aquí se mostrará el contenido del mazo restante -->
+        </div>
+
+        <!-- Sección para mostrar las cartas en la mano del jugador -->
+        <div id="manoActual">
+            <h2>Mano Actual</h2> <!-- Subtítulo para la mano actual -->
+            <p id="mano"></p> <!-- Aquí se mostrará el contenido de la mano -->
+        </div>
+    </div>
+
+    <script>
+       
+const palos = ["Oros", "Copas", "Espadas", "Bastos"];
+
+// Variables globales
+let barajaEspañola = []; // Contendrá todas las cartas de la baraja
+let mano = []; // Contendrá las cartas que el jugador ha robado
+
+// Generar la baraja española
+for (let palo of palos) { // Iterar sobre cada palo
+    for (let numero = 1; numero <= 10; numero++) { // Iterar sobre los números del 1 al 10
+        if (numero === 1) { 
+            barajaEspañola.push(["As", palo]); // Añadir el As
+        } else if (numero === 8) { 
+            barajaEspañola.push(["Sota", palo]); // Añadir la Sota
+        } else if (numero === 9) { 
+            barajaEspañola.push(["Caballo", palo]); // Añadir el Caballo
+        } else if (numero === 10) { 
+            barajaEspañola.push(["Rey", palo]); // Añadir el Rey
+        } else {
+            barajaEspañola.push([String(numero), palo]); // Añadir las cartas numéricas
+        }
+    }
+}
+
+// Función para barajar la baraja
+function barajar(baraja) {
+    baraja.sort(() => Math.random() - 0.5); // Mezclar las cartas de forma aleatoria
+}
+
+// Función para robar la primera carta del mazo
+function robar(baraja, mano) {
+    if (baraja.length > 0) { // Verificar si quedan cartas en el mazo
+        mano.unshift(baraja[0]); // Añadir la primera carta del mazo a la mano
+        baraja.shift(); // Eliminar la primera carta del mazo
+    } else {
+        alert("No quedan cartas en el mazo."); // Mostrar un mensaje si el mazo está vacío
+    }
+}
+
+// Función para robar una carta aleatoria del mazo
+function robarAleatoria(baraja, mano) {
+    if (baraja.length > 0) { // Verificar si quedan cartas en el mazo
+        let cartaSeleccionada = Math.floor(Math.random() * baraja.length); // Seleccionar una carta aleatoria
+        mano.unshift(baraja[cartaSeleccionada]); // Añadir la carta seleccionada a la mano
+        baraja.splice(cartaSeleccionada, 1); // Eliminar la carta seleccionada del mazo
+    } else {
+        alert("No quedan cartas en el mazo."); // Mostrar un mensaje si el mazo está vacío
+    }
+}
+
+function xenerarMan(baraja) {
+
+}
+
+
+// Función para actualizar la vista en el HTML
+function actualizarVista() {
+    document.getElementById("mazo").textContent = JSON.stringify(barajaEspañola, null, 2); // Mostrar el mazo restante
+    document.getElementById("mano").textContent = JSON.stringify(mano, null, 2); // Mostrar las cartas en la mano
+}
+
+    </script>
+</body>
+</html>
