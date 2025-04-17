@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lista da compra</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    button[onclick="agregarTarea()"] {
+      background-color: #2ecc71;
+      color: white;
+    }
+
+    button#resetea {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    li button {
+      background-color: transparent;
+      border: none;
+      color: red;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    li button:hover {
+      color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Título da páxina -->
+  <h1>Lista da compra</h1>
+
+  <!-- Caixa de texto para escribir o nome do elemento a engadir -->
+  <input type="text" id="nuevaTarea" placeholder="Engadir elementos á lista...">
+  
+  <!-- Botón que chama á función agregarTarea() cando se preme -->
+  <button onclick="agregarTarea()">Agregar</button>
+
+  <!-- Botón para borrar toda a lista, chama á función reset() -->
+  <button id="resetea" onclick="reset()">Reset</button>
+
+  <!-- Lista onde se irán engadindo os elementos -->
+  <ul id="lista"></ul>
+
+  <!-- Zona de script: aquí vai o código JavaScript -->
+  <script>
+
+    // Función que engade un novo elemento á lista
+    function agregarTarea() {
+      // Recolle o texto escrito no input
+      let texto = document.getElementById("nuevaTarea").value;
+
+      // Recolle a lista onde se van engadir os elementos
+      let lista = document.getElementById("lista");
+
+      // Crea un novo elemento <li>
+      let nueva = document.createElement("li");
+      // Pónlle como texto o que escribiches
+      nueva.textContent = texto;
+
+      // Crea un botón para eliminar o elemento individualmente
+      let btn = document.createElement("button");
+      btn.textContent = "❌"; // O botón ten unha cruz
+
+      // Cando se preme ese botón, bórrase o <li> correspondente
+      btn.onclick = function() {
+        lista.removeChild(nueva);
+      };
+
+      // Engade o botón dentro do <li>
+      nueva.appendChild(btn);
+
+      // Engade o <li> completo (con botón) á lista <ul>
+      lista.appendChild(nueva);
+
+      // Limpa o input para escribir outro elemento
+      document.getElementById("nuevaTarea").value = "";
+    }
+
+    // Función para borrar toda a lista
+    function reset() {
+      let lista = document.getElementById("lista");
+      lista.innerHTML = "";
+    }
+
+
+    document.addEventListener("keydown", function (event) {
+
+// Se a tecla premida é "Enter"
+if (event.key === "Enter") {
+  agregarTarea(); // Chamamos á función como se se premera o botón
+}
+    }
+);
+
+  </script>
+</body>
+</html>
