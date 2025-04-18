@@ -21,7 +21,7 @@
             Robar Carta
         </button>
 
-        <button id="xenararMan" onclick="xenerarMan(); actualizarVista()">
+        <button id="xenararMan" onclick="xenerarMan(barajaEspañola,mano); actualizarVista()">
             Xenera unha man de 7 cartas aleatorias
         </button>
 
@@ -94,9 +94,15 @@ function robarAleatoria(baraja, mano) {
     }
 }
 
-function xenerarMan(baraja) {
-
-}
+function xenerarMan(baraja, mano) {
+            if (baraja.length >= 7) { 
+                for (let i = 0; i < 7; i++) {
+                    mano.unshift(baraja.shift()); // Mover la carta del mazo a la mano
+                }
+            } else {
+                alert("No hay suficientes cartas en el mazo para generar una mano de 7 cartas."); 
+            }
+        }
 
 
 // Función para actualizar la vista en el HTML
@@ -104,6 +110,7 @@ function actualizarVista() {
     document.getElementById("mazo").textContent = JSON.stringify(barajaEspañola, null, 2); // Mostrar el mazo restante
     document.getElementById("mano").textContent = JSON.stringify(mano, null, 2); // Mostrar las cartas en la mano
 }
+actualizarVista();
 
     </script>
 </body>
