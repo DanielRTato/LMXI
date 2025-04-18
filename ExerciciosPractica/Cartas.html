@@ -41,6 +41,11 @@
             <h2>Mano Actual</h2> <!-- Subtítulo para la mano actual -->
             <p id="mano"></p> <!-- Aquí se mostrará el contenido de la mano -->
         </div>
+
+        <div id="estadisticas">
+            <h2>Estatísticas:</h2>
+            <p id="stats"></p>
+        </div>
     </div>
 
     <script>
@@ -99,16 +104,38 @@ function xenerarMan(baraja, mano) {
                 for (let i = 0; i < 7; i++) {
                     mano.unshift(baraja.shift()); // Mover la carta del mazo a la mano
                 }
-            } else {
+         } else {
                 alert("No hay suficientes cartas en el mazo para generar una mano de 7 cartas."); 
-            }
-        }
+    }
+}
+
+let oros = 0, copas = 0, espadas = 0, bastos = 0;
+    for(let i = 0; i < mano.length; i++) {
+        if (mano[i].includes("Oros")) {oros++;}
+        else if (mano[i].includes("Copas")) {copas++;}
+        else if (mano[i].includes("Espadas")) {espadas++;}
+        else if (mano[i].includes("Bastos")) {bastos++;}
+    }
+
+    document.getElementById("stats").textContent = "Oros: " + oros + " Copas: " + copas + " Espadas: " + espadas + " Bastos: " + bastos;
+
 
 
 // Función para actualizar la vista en el HTML
 function actualizarVista() {
     document.getElementById("mazo").textContent = JSON.stringify(barajaEspañola, null, 2); // Mostrar el mazo restante
     document.getElementById("mano").textContent = JSON.stringify(mano, null, 2); // Mostrar las cartas en la mano
+
+    let oros = 0, copas = 0, espadas = 0, bastos = 0;
+    for(let i = 0; i < mano.length; i++) {
+        if (mano[i].includes("Oros")) {oros++;}
+        else if (mano[i].includes("Copas")) {copas++;}
+        else if (mano[i].includes("Espadas")) {espadas++;}
+        else if (mano[i].includes("Bastos")) {bastos++;}
+    }
+
+    document.getElementById("stats").textContent = "Oros: " + oros + " Copas: " + copas + " Espadas: " + espadas + " Bastos: " + bastos;
+
 }
 actualizarVista();
 
