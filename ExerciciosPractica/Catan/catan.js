@@ -3,15 +3,13 @@ let manoVermello = [];
 let manoAzul = [];
 let manoAmarelo = [];
 
-function tirarDados(){
-    let dado1 = 0;
-    let dado2 = 0
-    dado1 = Math.floor(Math.random()*6) + 1;
-    dado2 = Math.floor(Math.random()*6) + 1;
-    let suma = dado1 + dado2;
-    console.log(suma)
-    return suma;
-}
+const manos = {
+    branco: manoBranco,
+    vermello: manoVermello,
+    azul: manoAzul,
+    amarelo: manoAmarelo
+  };
+
 
 const tablero = [
     {numero: 2, recurso: ovella, players: ["vermello"] },
@@ -31,18 +29,30 @@ const tablero = [
     {numero: 10, recurso: barro, players: ["amarelo"] },
     {numero: 11, recurso: madeira, players: ["vermello", "branco"] },
     {numero: 11, recurso: ovella, players: ["amarelo", "azul"] },
-    {numero: 12, recurso: trigo, players: ["branco"] },
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    {numero: 12, recurso: trigo, players: ["branco"] },    
 ]
+
+function tirarDados(){
+    let dado1 = 0;
+    let dado2 = 0
+    dado1 = Math.floor(Math.random()*6) + 1;
+    dado2 = Math.floor(Math.random()*6) + 1;
+    let suma = dado1 + dado2;
+    console.log(suma)
+    return suma;
+}
+
+function repartirRecursos(numero) {
+    for (let i = 0; i < tablero.length; i++) {
+      if (tablero[i].numero === numero) {
+        let jugadores = tablero[i].players;
+        let recurso = tablero[i].recurso;
+  
+        for (let j = 0; j < jugadores.length; j++) {
+          let nombre = jugadores[j];
+          manos[nombre].push(recurso);
+          console.log(`${nombre} recibe ${recurso}`);
+        }
+      }
+    }
+  }
