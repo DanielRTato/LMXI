@@ -56,7 +56,7 @@ function repartirRecursos(numero) {
 }
 
 function actualizarManos() {
-  document.querySelector(".manoBranco").innerHTML = "";
+  document.querySelector(".manoBranco").innerHTML ="";
   for (let i = 0; i < manoBranco.length; i++) {
     document.querySelector(".manoBranco").innerHTML += '<img src="img/' + manoBranco[i] + '.png" width="40">';
   }

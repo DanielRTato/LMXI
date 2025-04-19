@@ -4,25 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catán</title>
+    <style>
+      body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+
+  .boton {
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .manoBranco, .manoVermello, .manoAzul, .manoAmarelo {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #ccc;
+
+  }
+
+  .manoBranco img,
+  .manoVermello img,
+  .manoAzul img,
+  .manoAmarelo img {
+    margin: 5px;
+    border-radius: 5px;
+  }
+    </style>
 </head>
 <body>
     <div class="boton">
         <button onclick="tirarDados()">Lanzar dados</button>
     </div>
+    <b></b>
 
+    <h2>Cartas do xogador Branco:</h2>
     <div class="manoBranco">
-        <h1>Cartas do xogador Branco:</h1>
 
     </div>
-        <h1>Cartas do xogador Vermello:</h1>
+        <h2>Cartas do xogador Vermello:</h2>
     <div class="manoVermello">
 
     </div>
-        <h1>Cartas do xogador Azul</h1>
+        <h2>Cartas do xogador Azul:</h2>
     <div class="manoAzul">
         
     </div>
-        <h1>Cartas do xogador Amarelo:</h1>
+        <h2>Cartas do xogador Amarelo:</h2>
     <div class="manoAmarelo">
 
     </div>
