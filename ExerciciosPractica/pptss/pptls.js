@@ -39,40 +39,47 @@ document.getElementById("play").onclick = function() {
     const resultado = document.getElementById("resultado")
 
     if (pick1 && pick2){
-        if (pick1=="rock" && pick2=="lizard") {
-            resultado.innerHTML += "Piedra aplasta lagarto\n Gaña o XOGADOR 1";
-        }else if(pick1=="rock" && pick2 == "scissors") { 
-            resultado.innerHTMLML += "Piedra aplasta tijera\n Gaña o XOGADOR 1"
+
+        if(pick1===pick2){
+            resultado.innerHTML = "EMPATE";
         }
-        
-        if(pick1=="lizard" && pick2=="spock"){
-            resultado.innerHTML += "lagarto envenena Spock\n Gaña o XOGADOR 1"
-        }else if(pick1=="lizard" && pick2=="paper"){
-            resultado.innerHTML += "lagarto devora papel\n Gaña o XOGADOR 1"
+            else if (pick1=="rock" && pick2=="lizard") {
+                resultado.innerHTML += "Piedra aplasta lagarto\n Gaña o XOGADOR 1";
+            }else if(pick1=="rock" && pick2 == "scissors") { 
+                resultado.innerHTML = "Piedra aplasta tijera\n Gaña o XOGADOR 1"
+            }
+            
+           else if(pick1=="lizard" && pick2=="spock"){
+                resultado.innerHTML += "lagarto envenena Spock\n Gaña o XOGADOR 1"
+            }else if(pick1=="lizard" && pick2=="paper"){
+                resultado.innerHTML += "lagarto devora papel\n Gaña o XOGADOR 1"
+            }
+            
+            else if(pick1=="spock" && pick2=="scissors") {
+                resultado.innerHTML += "Spock rompe tijera\n Gaña o XOGADOR 1"
+            }else if(pick1 =="spock" && pick2=="rock") {
+                resultado.innerHTML += "Spock vaporiza piedra\n Gaña o XOGADOR 1"
+            }
+            
+            else if (pick1=="scissors" && pick2 == "paper"){
+                resultado.innerHTML += "Tijera cortal papel\n Gaña o XOGADOR 1"
+            }else if(pick1=="scissors" && pick2 == "lizard") {
+                resultado.innerHTML += "tijera decapita lagarto\n Gaña o XOGADOR 1"
+            }
+            
+            else if (pick1 =="paper" && pick2 =="rock") { 
+                resultado.innerHTML += "Papel envuelve piedra\n Gaña o XOGADOR 1"
+            }else if(pick1=="paper" && pick2 == "spock") {
+                resultado.innerHTML += "Papel desautoriza Spock\n Gaña o XOGADOR 1"
+            }
+            else {
+                resultado.innerHTML += "Gana o XOGADOR 2";
+            }
         }
-        
-        if(pick1=="spock" && pick2=="scissors") {
-            resultado.innerHTML += "Spock rompe tijera\n Gaña o XOGADOR 1"
-        }else if(pick1 =="spock" & pick2=="rock") {
-            resultado.innerHTML += "Spock vaporiza piedra\n Gaña o XOGADOR 1"
-        }
-        
-        if (pick1=="scissors" && pick2 == "paper"){
-            resultado.innerHTML += "Tijera cortal papel\n Gaña o XOGADOR 1"
-        }else if(pick1=="scissors" & pick2 == "lizard") {
-            resultado.innerHTML += "tijera decapita lagarto\n Gaña o XOGADOR 1"
-        }
-        
-        if (pick1 =="paper" && pick2 =="rock") { 
-            resultado.innerHTML += "Papel envuelve piedra\n Gaña o XOGADOR 1"
-        }else if(pick1=="paper" && pick2 == "spock") {
-            resultado.innerHTML += "Papel desautoriza Spock\n Gaña o XOGADOR 1"
-        }
-        else {
-            resultado.innerHTML += "Gana o XOGADOR 2";
-        }
-    }
 
 
-}
+};
 
+function resetear() {
+    location.reload(); // un poco cutre
+  }
