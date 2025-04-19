@@ -18,38 +18,44 @@ body{
     width: 450px;
 }
 
-#rock{
+#rock1, #rock2{
     background-image: url(img/pedra.png);
     height: 200px;
     width: 175px;
 }
 
-#Scissors{
+#Scissors1, #Scissors2{
     background-image: url(img/tesoiras.png);
     height: 200px;
     width: 175px;
 }
 
-#Lizard{
+#Lizard1, #Lizard2{
     background-image: url(img/lagarto.png);
     height: 200px;
     width: 175px;
 }
 
-#paper{
+#paper1, #paper2{
     background-image: url(img/papel.png);
     height: 200px;
     width: 175px;
 }
 
-#rock{
+#rock1, #rock2{
     background-image: url(img/pedra.png);
     height: 200px;
     width: 175px;
 }
 
-#Spock{
+#Spock1, #Spock2{
     background-image: url(img/spock.png);
     height: 200px;
     width: 175px;
+}
+
+.button:active {
+    background-color: aqua;
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
