@@ -12,16 +12,16 @@
         <img src="img/vaso.jpg" id="vaso2" alt="un vaso rojo" width="300px" height="300px" onclick="dondeMoneda(2)">
         <img src="img/vaso.jpg" id="vaso3" alt="un vaso rojo" width="300px" height="300px" onclick="dondeMoneda(3)">
     </div>
-    <button id="reset">Reset</button>
+    <button id="reset" onclick="resetear()">Reset</button>
     
     <p id="resultado"></p>
     <p></p>
-    <p id="contador">Fallos: </p>
+    <p id="contador" style="color: red;">Fallos: </p>
 
     <script>
         let numAleatorio = Math.floor(Math.random() * 3) + 1;
         console.log(numAleatorio)
-        let contador = 0;
+        let contador = 1;
         
         function dondeMoneda(numero) {
             if (numero == numAleatorio){
@@ -30,12 +30,15 @@
                 ;
             }else {
                 document.getElementById("resultado").innerHTML = "Error"
-                document.getElementById("contador").innerHTML = contador;
+                document.getElementById("contador").innerHTML = "Fallos: " +contador;
                 contador ++;
             }
 
         }
 
+        function resetear() {
+           location.reload(); // un poco cutre
+  }
 
     
 
