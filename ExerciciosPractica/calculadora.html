@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div>
+        <input type="number" id="n1">
+            <div id="botones">
+            <button id="suma" onclick="suma()">Suma</button>
+            <button id="resta" onclick="resta()">Resta</button>
+            <button id="multi" onclick="multi()">Multiplicación</button>
+            <button id="div" onclick="div()">Division</button>
+            </div>
+        <input type="number" id="n2">
+    </div>
+    <p id="resultado">Resultado: </p>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+       
+
+        let n1 = parseFloat(document.getElementById("n1").value);
+        console.log(n1)
+        let n2 = parseFloat(document.getElementById("n2").value);
+        console.log(n2)
+
+        function suma(){
+            let resultado = n1 + n2;
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+        
+        function resta() {
+            let resultado = n1 - n2;
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+
+        function multi(){
+            let resultado = n1 * n2;
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+        
+        function div() {
+            let resultado = n1 / n2;
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+
+        function reset() {
+            location.reload();
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
