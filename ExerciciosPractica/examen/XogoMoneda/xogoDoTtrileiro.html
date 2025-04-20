@@ -8,25 +8,36 @@
 </head>
 <body>
     <div class="vaso">
-        <img src="img/vaso.jpg" id="vaso1" alt="un vaso rojo" width="300px" height="300px">
-        <img src="img/vaso.jpg" id="vaso2" alt="un vaso rojo" width="300px" height="300px">
-        <img src="img/vaso.jpg" id="vaso3" alt="un vaso rojo" width="300px" height="300px">
-
+        <img src="img/vaso.jpg" id="vaso1" alt="un vaso rojo" width="300px" height="300px" onclick="dondeMoneda(1)">
+        <img src="img/vaso.jpg" id="vaso2" alt="un vaso rojo" width="300px" height="300px" onclick="dondeMoneda(2)">
+        <img src="img/vaso.jpg" id="vaso3" alt="un vaso rojo" width="300px" height="300px" onclick="dondeMoneda(3)">
     </div>
+    <button id="reset">Reset</button>
     
+    <p id="resultado"></p>
+    <p></p>
+    <p id="contador">Fallos: </p>
+
     <script>
         let numAleatorio = Math.floor(Math.random() * 3) + 1;
         console.log(numAleatorio)
+        let contador = 0;
         
-        if  (numAleatorio === 1){
-            document.getElementById("vaso1").src = "img/moneda.png"
+        function dondeMoneda(numero) {
+            if (numero == numAleatorio){
+                document.getElementById("vaso" + numero).src = "img/moneda.png"
+                document.getElementById("resultado").innerHTML = "Acertaste"
+                ;
+            }else {
+                document.getElementById("resultado").innerHTML = "Error"
+                document.getElementById("contador").innerHTML = contador;
+                contador ++;
+            }
+
         }
-       else if  (numAleatorio === 2){
-            document.getElementById("vaso1").src = "img/moneda.png"
-        }
-        else {
-            document.getElementById("vaso1").src = "img/moneda.png"
-        }
+
+
+    
 
 
     </script>
