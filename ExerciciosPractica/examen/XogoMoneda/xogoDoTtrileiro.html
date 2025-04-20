@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xogo do trileiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="vaso">
+        <img src="img/vaso.jpg" id="vaso1" alt="un vaso rojo" width="300px" height="300px">
+        <img src="img/vaso.jpg" id="vaso2" alt="un vaso rojo" width="300px" height="300px">
+        <img src="img/vaso.jpg" id="vaso3" alt="un vaso rojo" width="300px" height="300px">
+
+    </div>
+    
+    <script>
+        let numAleatorio = Math.floor(Math.random() * 3) + 1;
+        console.log(numAleatorio)
+        
+        if  (numAleatorio === 1){
+            document.getElementById("vaso1").src = "img/moneda.png"
+        }
+       else if  (numAleatorio === 2){
+            document.getElementById("vaso1").src = "img/moneda.png"
+        }
+        else {
+            document.getElementById("vaso1").src = "img/moneda.png"
+        }
+
+
+    </script>
+
+</body>
+</html>
