@@ -30,6 +30,7 @@
                 ;
             }else {
                 document.getElementById("resultado").innerHTML = "Error"
+                document.getElementById("vaso" + numero).style.visibility = "hidden" // ocultar cuando fallas
                 document.getElementById("contador").innerHTML = "Fallos: " +contador;
                 contador ++;
             }
