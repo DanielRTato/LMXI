@@ -50,8 +50,8 @@
    function generarNombre() {
 
      //cogemos la primera letra del nombre y apellido
-    let nomeInicial =  document.getElementById("nome").value[0];
-    let apelidoInicial = document.getElementById("apelido").value[0];
+    let nomeInicial =  document.getElementById("nome").value[0].toUpperCase(); //querySelector en lugar de getElement vy Id
+    let apelidoInicial = document.getElementById("apelido").value[0].toUpperCase();
     let nomeLuchador = "";
     let apelidoLuchador = "";
 
