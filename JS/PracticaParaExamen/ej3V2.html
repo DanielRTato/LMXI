@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <title>Baralla Española - Man sinxela</title>
+</head>
+<body>
+    <h1>Xerar unha man de 7 cartas</h1>
+
+    <button onclick="xerarMan()">Nova Man</button>
+
+    <h2>Man:</h2>
+    <p id="man"></p>
+
+    <h2>Estatísticas:</h2>
+    <p id="estatisticas"></p>
+
+    <script>
+        const palos = ["Oros", "Copas", "Espadas", "Bastos"];
+        let baralla = [];
+
+        // Creamos a baralla completa
+        for (let i = 0; i < palos.length; i++) {
+            for (let num = 1; num <= 10; num++) {
+                let nome;
+                if (num === 1) nome = "As";
+                else if (num === 8) nome = "Sota";
+                else if (num === 9) nome = "Cabalo";
+                else if (num === 10) nome = "Rei";
+                else nome = num.toString();
+
+                baralla.push(nome + " de " + palos[i]);
+            }
+        }
+
+        function xerarMan() {
+            // Copiamos a baralla para non modificala orixinal
+            let copia = [...baralla];
+            let man = [];
+
+            // Escoller 7 cartas aleatorias sen repetir
+            for (let i = 0; i < 7; i++) {
+                let aleatoria = Math.floor(Math.random() * copia.length);
+                man.push(copia[aleatoria]);
+                copia.splice(aleatoria, 1);
+            }
+
+            // Amosar a man
+            document.getElementById("man").textContent = man.join(" | ");
+
+            // Contar os paus
+            let oros = 0, copas = 0, espadas = 0, bastos = 0;
+            for (let i = 0; i < man.length; i++) {
+                if (man[i].includes("Oros")) oros++;
+                else if (man[i].includes("Copas")) copas++;
+                else if (man[i].includes("Espadas")) espadas++;
+                else if (man[i].includes("Bastos")) bastos++;
+            }
+
+            // Amosar estatísticas
+            document.getElementById("estatisticas").textContent =
+                "Oros: " + oros + " | Copas: " + copas + " | Espadas: " + espadas + " | Bastos: " + bastos;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+         body {
+      font-family: Arial;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding-top: 40px;
+    }
+    input {
+      margin: 10px;
+      padding: 5px;
+      width: 100px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Calculadora</h1>
+
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+
+        <br>
+        
+            <div id="botones">
+            <button id="suma" onclick="suma()">Suma</button>
+            <button id="resta" onclick="resta()">Resta</button>
+            <button id="multi" onclick="multi()">Multiplicación</button>
+            <button id="div" onclick="div()">Division</button>
+            </div>
+        
+    </div>
+    <p id="resultado">Resultado: </p>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+       
+
+        let n1 = parseFloat(document.getElementById("n1").value);
+        console.log(n1)
+        let n2 = parseFloat(document.getElementById("n2").value);
+        console.log(n2)
+
+        function suma(){
+            let resultado = n1 + n2;
+            document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+        }
+        
+        function resta() {
+            let resultado = n1 - n2;
+            document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+        }
+
+        function multi(){
+            let resultado = n1 * n2;
+            document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+        }
+        
+        function div() {
+            let resultado = n1 / n2;
+            document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+        }
+
+        function reset() {
+            location.reload();
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

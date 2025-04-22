@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xerador de nomes de loita libre</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="text" id="nome" placeholder="Introduce o teu nome">
+        <input type="text" id="apelido" placeholder="Introduce o te apelido">
+        <button id="xenerar" onclick="generarNombre()">Xenerar nome de loita libre</button>
+    </div>
+
+    <div>
+        <p id="salida"></p>
+    </div>
+
+    <script>
+
+   const generador = [
+   { letra: "A", nom: "Muerte", apell: "Desnuda" },
+            { letra: "B", nom: "Pantera", apell: "Dorada" },
+            { letra: "C", nom: "Barriga", apell: "Sanguinaria" },
+            { letra: "D", nom: "Tormenta", apell: "Letal" },
+            { letra: "E", nom: "Mascara", apell: "Sexy" },
+            { letra: "F", nom: "Nalga", apell: "Demoniaca" },
+            { letra: "G", nom: "Gacela", apell: "Flacida" },
+            { letra: "H", nom: "Tempestad", apell: "Implacable" },
+            { letra: "I", nom: "Sombra", apell: "Destructora" },
+            { letra: "J", nom: "Barba", apell: "Veloz" },
+            { letra: "K", nom: "Gacela", apell: "Plateada" },
+            { letra: "L", nom: "Bestia", apell: "Suicida" },
+            { letra: "M", nom: "Venganza", apell: "Bailonga" },
+            { letra: "N", nom: "Capibara", apell: "Mugrienta" },
+            { letra: "O", nom: "Florecilla", apell: "Amorosa" },
+            { letra: "P", nom: "Aguila", apell: "Infernal" },
+            { letra: "Q", nom: "Juventud", apell: "del Espacio" },
+            { letra: "R", nom: "Estrella", apell: "Salvaje" },
+            { letra: "S", nom: "Serpiente", apell: "Fornida" },
+            { letra: "T", nom: "Fuerza", apell: "Colosal" },
+            { letra: "U", nom: "Masacre", apell: "Feroz" },
+            { letra: "V", nom: "Niebla", apell: "del Abismo" },
+            { letra: "W", nom: "Masa", apell: "Rocosa" },
+            { letra: "X", nom: "Greña", apell: "Fiestera" },
+            { letra: "Y", nom: "Pesadilla", apell: "Fantasmal" },
+            { letra: "Z", nom: "Quimera", apell: "Voladora" }
+   ];
+
+   function generarNombre() {
+
+     //cogemos la primera letra del nombre y apellido
+    let nomeInicial =  document.getElementById("nome").value[0];
+    let apelidoInicial = document.getElementById("apelido").value[0];
+    let nomeLuchador = "";
+    let apelidoLuchador = "";
+
+        
+
+   for (let i = 0; i< generador.length; i++) {
+    if (nomeInicial === generador[i].letra){
+        nomeLuchador = generador[i].nom;
+        console.log(nomeLuchador)   
+    }
+    if (apelidoInicial === generador[i].letra) {
+       apelidoLuchador = generador[i].apell;
+   }
+}
+
+   if (nomeLuchador && apelidoLuchador) {
+    document.getElementById("salida").innerHTML = nomeLuchador + " " + apelidoLuchador
+   }
+
+
+}
+   
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-family: Arial;
+  }
+ .vaso img {
+    cursor: pointer;
+  }
+
+  #vaso1:active {
+    border: 1px solid black;
+    transform: scale(0.95);
+  filter: brightness(0.8);
+  }
+
+  #vaso2:active {
+    border: 1px solid black;
+    transform: scale(0.95);
+  filter: brightness(0.8);
+  }
+
+  #vaso3:active {
+    border: 1px solid black;
+    transform: scale(0.95);
+    filter: brightness(0.8);
+  }
+
+ 

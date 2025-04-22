@@ -1,16 +1,15 @@
-<!-- Este es el archivo HTML principal para la aplicación de la Baraja Española -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadatos básicos del documento -->
-    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el diseño sea responsivo -->
-    <title>Baraja Española</title> <!-- Título que aparece en la pestaña del navegador -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej3 baraja</title> 
 </head>
 <body>
-    <!-- Contenedor principal del programa -->
+ 
     <div id="programa">
-        <h1>Baraja Española</h1> <!-- Título principal de la página -->
+        <h1>Baraja Española</h1> 
 
         <!-- Botón para barajar la baraja -->
         <button id="barajar" onclick="barajar(barajaEspañola); actualizarVista();">
@@ -22,6 +21,10 @@
             Robar Carta
         </button>
 
+        <button id="xenararMan" onclick="xenerarMan(barajaEspañola,mano); actualizarVista()">
+            Xenera unha man de 7 cartas aleatorias
+        </button>
+
         <!-- Botón para robar una carta aleatoria del mazo -->
         <button id="robarAleatoria" onclick="robarAleatoria(barajaEspañola, mano); actualizarVista();">
             Robar Carta Aleatoria
@@ -29,7 +32,7 @@
 
         <!-- Sección para mostrar las cartas restantes en el mazo -->
         <div id="mazoRestante">
-            <h2>Mazo Restante</h2> <!-- Subtítulo para el mazo restante -->
+            <h2>Mazo Restante</h2>
             <p id="mazo"></p> <!-- Aquí se mostrará el contenido del mazo restante -->
         </div>
 
@@ -41,13 +44,12 @@
 
         <div id="estadisticas">
             <h2>Estatísticas:</h2>
+            <p id="stats"></p>
         </div>
-
     </div>
 
-    <!-- Archivo JavaScript que contiene la lógica del programa -->
     <script>
-// Definición de los palos de la baraja española
+       
 const palos = ["Oros", "Copas", "Espadas", "Bastos"];
 
 // Variables globales
@@ -97,29 +99,45 @@ function robarAleatoria(baraja, mano) {
     }
 }
 
+function xenerarMan(baraja, mano) {
+            if (baraja.length >= 7) { 
+                for (let i = 0; i < 7; i++) {
+                    mano.unshift(baraja.shift()); // Mover la carta del mazo a la mano
+                }
+         } else {
+                alert("No hay suficientes cartas en el mazo para generar una mano de 7 cartas."); 
+    }
+}
+
+let oros = 0, copas = 0, espadas = 0, bastos = 0;
+    for(let i = 0; i < mano.length; i++) {
+        if (mano[i].includes("Oros")) {oros++;}
+        else if (mano[i].includes("Copas")) {copas++;}
+        else if (mano[i].includes("Espadas")) {espadas++;}
+        else if (mano[i].includes("Bastos")) {bastos++;}
+    }
+
+    document.getElementById("stats").textContent = "Oros: " + oros + " Copas: " + copas + " Espadas: " + espadas + " Bastos: " + bastos;
+
+
+
 // Función para actualizar la vista en el HTML
 function actualizarVista() {
     document.getElementById("mazo").textContent = JSON.stringify(barajaEspañola, null, 2); // Mostrar el mazo restante
     document.getElementById("mano").textContent = JSON.stringify(mano, null, 2); // Mostrar las cartas en la mano
+
+    let oros = 0, copas = 0, espadas = 0, bastos = 0;
+    for(let i = 0; i < mano.length; i++) {
+        if (mano[i].includes("Oros")) {oros++;}
+        else if (mano[i].includes("Copas")) {copas++;}
+        else if (mano[i].includes("Espadas")) {espadas++;}
+        else if (mano[i].includes("Bastos")) {bastos++;}
+    }
+
+    document.getElementById("stats").textContent = "Oros: " + oros + " Copas: " + copas + " Espadas: " + espadas + " Bastos: " + bastos;
+
 }
-
-// Inicializar la baraja y actualizar la vista
-barajar(barajaEspañola); // Barajar la baraja al inicio
-actualizarVista(); // Mostrar el estado inicial de la baraja y la mano
-
-// Ejemplo de acciones iniciales
-robar(barajaEspañola, mano); // Robar la primera carta
-actualizarVista(); // Actualizar la vista
-
-robarAleatoria(barajaEspañola, mano); // Robar una carta aleatoria
-actualizarVista(); // Actualizar la vista
-
-robar(barajaEspañola, mano); // Robar otra carta
-actualizarVista(); // Actualizar la vista
-
-// Mostrar el estado final en la consola
-console.log("Mazo restante: ", barajaEspañola); // Mostrar las cartas restantes en el mazo
-console.log("Mano: ", mano); // Mostrar las cartas en la mano
+actualizarVista();
 
     </script>
 </body>

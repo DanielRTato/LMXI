@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        const persona = {
+            nombre: "David",
+            edad: 22,
+            comidaFavorita: "Hamburguesas",
+        };
+        persona.deporteFavorito = "Tenis";
+
+        let edad = persona.edad;
+        console.log(edad)
+        persona.edad = 25;
+
+        console.log(persona.edad)
+        console.log(persona.deporteFavorito)
+        
+        // recorrer un objeto
+        for (let key in persona) {
+            console.log(key, persona[key])
+        }
+
+        const arrayDeObjetos = [
+            {
+                nombre: "dani",
+                edad: 28,
+                comidaFavorita: "Hamburguesa",
+            },
+            {
+                nombre: "alex",
+                edad: 2,
+                comidaFavorita: "pizza",
+            },
+            {
+                nombre: "juan",
+                edad: 2228,
+                comidaFavorita: "pasta",
+            },
+        ];
+
+        for (let i = 0; i < arrayDeObjetos.length; i++){
+            console.log (arrayDeObjetos[i]);
+            console.log (arrayDeObjetos[i].nombre);
+            console.log (arrayDeObjetos[i].edad);
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Básica</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding-top: 40px;
+    }
+    .calculadora {
+      background: white;
+      padding: 20px;
+      display: inline-block;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      margin: 10px;
+      padding: 5px;
+      width: 100px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculadora">
+    <h2>Calculadora Básica</h2>
+    <input type="number" id="n1" placeholder="Número 1">
+    <input type="number" id="n2" placeholder="Número 2"><br>
+
+    <button onclick="calcular('+')">Sumar</button>
+    <button onclick="calcular('-')">Restar</button>
+    <button onclick="calcular('*')">Multiplicar</button>
+    <button onclick="calcular('/')">Dividir</button>
+    <button onclick="reset()">Reset</button>
+
+    <div id="resultado">Resultado: </div>
+  </div>
+
+  <script>
+    function calcular(operacion) {
+      let n1 = parseFloat(document.getElementById("n1").value);
+      let n2 = parseFloat(document.getElementById("n2").value);
+      let resultado = "";
+
+      if (isNaN(n1) || isNaN(n2)) {
+        resultado = "Por favor, introduce números válidos.";
+      } else {
+        switch(operacion) {
+          case '+':
+            resultado = n1 + n2;
+            break;
+          case '-':
+            resultado = n1 - n2;
+            break;
+          case '*':
+            resultado = n1 * n2;
+            break;
+          case '/':
+            resultado = n2 !== 0 ? (n1 / n2).toFixed(2) : "Non se pode dividir por 0";
+            break;
+        }
+      }
+
+      document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+    }
+
+    function reset() {
+      document.getElementById("n1").value = "";
+      document.getElementById("n2").value = "";
+      document.getElementById("resultado").innerHTML = "Resultado: ";
+    }
+  </script>
+
+</body>
+</html>
