@@ -35,9 +35,9 @@ function tirarDados() {
   let dado1 = Math.floor(Math.random() * 6) + 1;
   let dado2 = Math.floor(Math.random() * 6) + 1;
   let suma = dado1 + dado2;
-  console.log("🎲 Dados: " + dado1 + " + " + dado2 + " = " + suma);
+  console.log("Dados: " + dado1 + " + " + dado2 + " = " + suma);
   repartirRecursos(suma);
-  actualizarManos(); // 👈 Mostrar resultados en pantalla
+  actualizarManos();
 }
 
 function repartirRecursos(numero) {

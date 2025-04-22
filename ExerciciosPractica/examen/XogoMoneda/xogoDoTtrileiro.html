@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xogo do trileiro</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="vaso">
         <img src="img/vaso.jpg" id="vaso1" alt="un vaso rojo" width="300px" height="300px" onclick="dondeMoneda(1)">
@@ -13,7 +15,7 @@
         <img src="img/vaso.jpg" id="vaso3" alt="un vaso rojo" width="300px" height="300px" onclick="dondeMoneda(3)">
     </div>
     <button id="reset" onclick="resetear()">Reset</button>
-    
+
     <p id="resultado"></p>
     <p></p>
     <p id="contador" style="color: red;">Fallos: </p>
@@ -22,29 +24,29 @@
         let numAleatorio = Math.floor(Math.random() * 3) + 1;
         console.log(numAleatorio)
         let contador = 1;
-        
+
         function dondeMoneda(numero) {
-            if (numero == numAleatorio){
-                document.getElementById("vaso" + numero).src = "img/moneda.png"
-                document.getElementById("resultado").innerHTML = "Acertaste"
-                ;
-            }else {
-                document.getElementById("resultado").innerHTML = "Error"
-                document.getElementById("vaso" + numero).style.visibility = "hidden" // ocultar cuando fallas
-                document.getElementById("contador").innerHTML = "Fallos: " +contador;
-                contador ++;
+            if (numero == numAleatorio) {
+                document.getElementById("vaso" + numero).src = "img/moneda.png";
+                document.getElementById("resultado").innerHTML = "Acertaste";
+            } else {
+                document.getElementById("resultado").innerHTML = "Error";
+                document.getElementById("vaso" + numero).style.visibility = "hidden"; // ocultar cuando fallas
+                document.getElementById("contador").innerHTML = "Fallos: " + contador;
+                contador++;
             }
 
         }
 
         function resetear() {
-           location.reload(); // un poco cutre
-  }
+            location.reload(); // un poco cutre
+        }
 
-    
+
 
 
     </script>
 
 </body>
+
 </html>
