@@ -82,7 +82,7 @@ console.log(mensaje);
 
 ---
 
-### 8. Selección de Elementos del DOM
+### 8. Selección de Elementos del DOM 1 
 ```js
 document.getElementById("miId");            // Por ID
 document.getElementsByClassName("clase");   // Por clase
