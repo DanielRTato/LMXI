@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de clics</title>
+</head>
+<body>
+    <button id="boton" onclick="contar()"><h1>Haz clic aquí</h1></button>
+    <h1 id="resultado">Contador: </h1>
+    
+    <script>
+        let contador = 0;
+
+
+        function contar() {
+            contador++;
+            console.log(contador)
+            document.getElementById("resultado").innerHTML = "Contador: " + contador;
+            document.getElementById("resultado").style.color = "green";
+
+        }
+    </script>
+</body>
+</html>
