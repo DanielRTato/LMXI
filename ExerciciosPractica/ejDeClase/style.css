@@ -1,0 +1,34 @@
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap:10px
+}
+
+.container-cartas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.container-labels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+h4{
+    margin:4px
+}
+
+img{
+    image-rendering: pixelated;  
+    height:192px;
+    width: 120px; ; 
+}
