@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f0f8ff;
+}
+.contenedor-vasos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+.vaso {
+    width: 200px;
+
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.vaso:hover {
+    transform: scale(1.05);
+}
+#moneda {
+    width: 100px;
+    position: absolute;
+    display: none;
+}
+#contadores {
+    margin: 20px;
+    font-size: 18px;
+}
+#botonReset {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#botonReset:hover {
+    background-color: #45a049;
+}
