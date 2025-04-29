@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio DOM - Imagen y Frase</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    img {
+      width: 250px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    p {
+      font-size: 1.5em;
+      color: #333;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Haz clic en la imagen</h1>
+  <img src="https://placekitten.com/400/300" id="miImagen" alt="Imagen divertida">
+  <p id="miFrase">Nunca diría que los gatos dominan el mundo...</p>
+
+  <script>
+    const imagen = document.getElementById('miImagen');
+    const frase = document.getElementById('miFrase');
+
+    const frasesAlternativas = [
+      "Bueno... quizás sí lo diría.",
+      "¡Los gatos mandan!",
+      "Ok, lo dije. ¿Y qué?",
+      "¡Jamás lo admitiré de nuevo!",
+      "Sí, lo dije. Y lo sostengo."
+    ];
+
+    imagen.addEventListener('click', () => {
+      const aleatoria = Math.floor(Math.random() * frasesAlternativas.length);
+      frase.textContent = frasesAlternativas[aleatoria];
+    });
+  </script>
+
+</body>
+</html>
