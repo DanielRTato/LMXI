@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de JavaScript (funciones independientes)</title>
+
+  <!-- Tu hoja de estilos -->
+
+</head>
+
+<body>
+  <!-- ──────────── Entrada de texto y saludo ──────────── -->
+  <section>
+    <h2>Saluda a la página</h2>
+    <form>
+      <input class="input" type="text" id="nombre" placeholder="Escribe tu nombre">
+      <button type="button" id="btnSaludar">Enviar</button>
+    </form>
+    <p id="saludo"></p>
+  </section>
+
+  <!-- ──────────── Número aleatorio ──────────── -->
+  <section>
+    <h2>Número aleatorio (1 – 100)</h2>
+    <button id="btnRandom">Generar número</button>
+    <p id="resultadoRandom"></p>
+  </section>
+
+  <!-- ──────────── Cambio de color ──────────── -->
+  <section>
+    <h2>Cambiar el color de fondo</h2>
+    <button id="btnColor">Cambiar color</button>
+  </section>
+
+  <!-- ──────────── Contador de clics ──────────── -->
+  <section>
+    <h2>Contador de clics</h2>
+    <button id="btnContador">Haz clic</button>
+    <span id="cuentaClicks">0</span> clics
+  </section>
+
+  <!-- ──────────── Lista de la compra ──────────── -->
+  <section>
+    <h2>Lista de la compra</h2>
+    <input type="text" id="item" placeholder="Añade un producto">
+    <button id="btnAddItem">Agregar</button>
+    <ul id="lista"></ul>
+  </section>
+
+  <!-- ──────────── Reloj en vivo ──────────── -->
+  <section>
+    <h2>Reloj en vivo</h2>
+    <button id="btnIniciarReloj">Iniciar reloj</button>
+    <p id="reloj"></p>
+  </section>
+  <!-- ──────────── Calculadora ──────────── -->
+<section>
+    <h2>Calculadora (+ – × ÷)</h2>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <select id="operacion">
+      <option value="+">+</option>
+      <option value="-">−</option>
+      <option value="*">×</option>
+      <option value="/">÷</option>
+    </select>
+    <button id="btnCalcular">Calcular</button>
+    <p id="resultadoCalc"></p>
+  </section>
+  
+
+  <!-- ──────────── Reinicio automático (demo) ──────────── -->
+  <section>
+    <h2>Reiniciar sitio (demo)</h2>
+    <button id="btnReset">Reiniciar en 2 s</button>
+  </section>
+
+  <!-- Tu bundle de funciones -->
+  <script src="guia.js"></script>
+</body>
+</html>
