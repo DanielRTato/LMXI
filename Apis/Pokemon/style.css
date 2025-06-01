@@ -3,7 +3,6 @@
     src: url('Ketchum.otf') format('truetype');
     font-weight: bold;
     font-style: normal;
-    font-size: large;
 }
 
 body {
@@ -17,8 +16,17 @@ body {
 }
 
 #botones {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     margin-bottom: 20px;
+}
+
+.grupo-tipos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 label {
@@ -51,6 +59,12 @@ button {
     margin-top: 30px;
     text-align: center;
     
+}
+
+h1 {
+    color: #f7da16;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 #pokemon-image {
