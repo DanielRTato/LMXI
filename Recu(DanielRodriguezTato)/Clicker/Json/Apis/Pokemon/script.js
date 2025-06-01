@@ -22,7 +22,7 @@ let ground = document.getElementById('ground');
 let poison = document.getElementById('poison');
 let flying = document.getElementById('flying');
 let boton = document.getElementById('boton');
-
+// pendiente
 boton.addEventListener("click", generarPokemon) 
 function generarPokemon() {
     let radios = document.getElementsByName("tipo")    
