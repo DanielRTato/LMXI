@@ -5,27 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon!</title>
 </head>
-<body>
-    <label for="steel"><input type="radio" name="tipo" value="steel" id="steel"> Acero</label>
-    <label for="water"><input type="radio" name="tipo" value="water" id="water"> Agua</label>
-    <label for="bug"><input type="radio" name="tipo" value="bug" id="bug"> Bicho</label>
-    <label for="dragon"><input type="radio" name="tipo" value="dragon" id="dragon"> Dragón</label>
-    <label for="electric"><input type="radio" name="tipo" value="electric" id="electric"> Eléctrico</label>
-    <label for="ghost"><input type="radio" name="tipo" value="ghost" id="ghost"> Fantasma</label>
-    <label for="fire"><input type="radio" name="tipo" value="fire" id="fire"> Fuego</label>
-    <label for="fairy"><input type="radio" name="tipo" value="fairy" id="fairy"> Hada</label>
-    <label for="ice"><input type="radio" name="tipo" value="ice" id="ice"> Hielo</label>
-    <label for="figth"><input type="radio" name="tipo" value="figth" id="figth"> Lucha</label>
-    <label for="normal"><input type="radio" name="tipo" value="normal" id="normal"> Normal</label>
-    <label for="grass"><input type="radio" name="tipo" value="grass" id="grass"> Planta</label>
-    <label for="psychic"><input type="radio" name="tipo" value="psychic" id="psychic"> Psíquico</label>
-    <label for="rock"><input type="radio" name="tipo" value="rock" id="rock"> Roca</label>
-    <label for="dark"><input type="radio" name="tipo" value="dark" id="dark"> Siniestro</label>
-    <label for="ground"><input type="radio" name="tipo" value="ground" id="ground"> Tierra</label>
-    <label for="poison"><input type="radio" name="tipo" value="poison" id="poison"> Veneno</label>
-    <label for="flying"><input type="radio" name="tipo" value="flying" id="flying"> Volador</label>
-
+<body>  
+    <div id="botones">
+        <label for="steel"><input type="radio" name="tipo" value="steel" id="steel"> Acero</label>
+        <label for="water"><input type="radio" name="tipo" value="water" id="water"> Agua</label>
+        <label for="bug"><input type="radio" name="tipo" value="bug" id="bug"> Bicho</label>
+        <label for="dragon"><input type="radio" name="tipo" value="dragon" id="dragon"> Dragón</label>
+        <label for="electric"><input type="radio" name="tipo" value="electric" id="electric"> Eléctrico</label>
+        <label for="ghost"><input type="radio" name="tipo" value="ghost" id="ghost"> Fantasma</label>
+        <label for="fire"><input type="radio" name="tipo" value="fire" id="fire"> Fuego</label>
+        <label for="fairy"><input type="radio" name="tipo" value="fairy" id="fairy"> Hada</label>
+        <label for="ice"><input type="radio" name="tipo" value="ice" id="ice"> Hielo</label>
+        <label for="fighting"><input type="radio" name="tipo" value="fighting" id="fighting"> Lucha</label>
+        <label for="normal"><input type="radio" name="tipo" value="normal" id="normal"> Normal</label>
+        <label for="grass"><input type="radio" name="tipo" value="grass" id="grass"> Planta</label>
+        <label for="psychic"><input type="radio" name="tipo" value="psychic" id="psychic"> Psíquico</label>
+        <label for="rock"><input type="radio" name="tipo" value="rock" id="rock"> Roca</label>
+        <label for="dark"><input type="radio" name="tipo" value="dark" id="dark"> Siniestro</label>
+        <label for="ground"><input type="radio" name="tipo" value="ground" id="ground"> Tierra</label>
+        <label for="poison"><input type="radio" name="tipo" value="poison" id="poison"> Veneno</label>
+        <label for="flying"><input type="radio" name="tipo" value="flying" id="flying"> Volador</label>
+    </div>
+    
     <button type="button" id="boton">Generar Pokemon</button>
-    <h1 ></h1>
+
+    <div class="pokemon-container">
+        <h1></h1>
+        <div class="pokemon-info">
+            <img id="pokemon-image" src="">
+            <div class="pokemon-stats">
+                <p>Altura: <span id="pokemon-height"></span></p>
+                <p>Peso: <span id="pokemon-weight"></span></p>
+                <p>Tipo: <span id="pokemon-types"></span></p>
+                <p>Habilidades: <span id="pokemon-abilities"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
