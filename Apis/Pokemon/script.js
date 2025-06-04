@@ -49,8 +49,8 @@ function imprimirData(data) {
     const numeroAleatorio = Math.floor(Math.random() * data.pokemon.length);
     const pokemon = data.pokemon[numeroAleatorio].pokemon;
     
-    fetch(`https://pokeapi.co/api/v2/pokemon/` + pokemon.name)
-        fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon.name)
+   
+    fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon.name)
         .then(respuestaPokemon)
         .catch(respuestaError);
 }
@@ -84,7 +84,6 @@ function mostrarPokemon(pokemonData) {
 
     console.log(pokemonData);
 }
-
 
 function respuestaError() {
     console.log("Error")

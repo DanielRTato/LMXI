@@ -1,3 +1,4 @@
+/* Fuente personalizada para el título y textos */
 @font-face {
     font-family: 'Pokemon Hollow';
     src: url('Ketchum.otf') format('truetype');
@@ -5,77 +6,118 @@
     font-style: normal;
 }
 
+/* Estilo general del cuerpo */
 body {
     font-family: 'Pokemon Hollow', Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e3eefd; /* Fondo más suave tipo Pokémon */
     margin: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 28px;
+    min-height: 100vh;
+}
+.grupo-tipos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 10px;
 }
 
+/* Contenedor de los botones y radios */
 #botones {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 700px;
 }
 
-.grupo-tipos {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
 
+
+/* Etiquetas de los tipos */
 label {
     padding: 12px 20px;
-    background-color: white;
+    background-color: #fffbe7;
     border-radius: 20px;
     margin: 8px;
-    font-size: 16px;
+    font-size: 18px;
+    border: 2px solid #f7da16;
+    
+}
+label:hover {
+    background-color: #ffe066;
+    transform: scale(1.05);
 }
 
+/* Radios personalizados */
 input[type="radio"] {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
+    accent-color: red; /* Cambia el color del radio */
+    vertical-align: middle;
 }
 
+/* Botón principal */
 button {
-    background: yellow  ;
-    border: 4px solid blue;
-    padding: 15px 30px;
+    background: linear-gradient(90deg, #ffe066 60%, #f7da16 100%);
+    border: 4px solid #3b4cca;
+    color: #2d2d2d;
+    padding: 15px 40px;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    
+    box-shadow: 0 4px 12px rgba(59,76,202,0.12);    
+}
+button:hover {
+    background: linear-gradient(90deg, #f7da16 60%, #ffe066 100%);
+    transform: scale(1.07);
 }
 
+/* Contenedor de la información del Pokémon */
 .pokemon-container {
     background-color: white;
-    padding: 30px;
+    padding: 30px 40px;
     margin-top: 30px;
     text-align: center;
-    
+    border-radius: 30px;
+    box-shadow: 0 8px 24px rgba(59,76,202,0.10);
+    max-width: 400px;
+    width: 100%;
 }
 
+/* Título principal */
 h1 {
     color: #f7da16;
     font-weight: bold;
     margin: 20px 0;
+    text-shadow: 2px 2px 0 #3b4cca, 4px 4px 0 #fffbe7;
+    letter-spacing: 2px;
 }
 
+/* Imagen del Pokémon */
 #pokemon-image {
-    width: 300px;
-    height: 300px;
-    
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    background: #e3eefd;
+    border-radius: 50%;
+    border: 4px solid #f7da16;
+    box-shadow: 0 2px 8px rgba(59,76,202,0.10);
 }
 
+/* Estadísticas del Pokémon */
 .pokemon-stats {
     text-align: left;
     margin: 0 auto;
-    width: 300px;
-    font-size: 28px;
+    width: 90%;
+    font-size: 22px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(59,76,202,0.05);
 }
