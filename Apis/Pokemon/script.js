@@ -36,7 +36,7 @@ function generarPokemon() {
         }
     }
     console.log(tipoSeleccionado);
-fetch(`https://pokeapi.co/api/v2/type/${tipoSeleccionado}`)
+fetch(`https://pokeapi.co/api/v2/type/` + tipoSeleccionado)
     .then(respuestaCorrecta)
     .catch(respuestaError);
 }
@@ -49,31 +49,42 @@ function imprimirData(data) {
     const numeroAleatorio = Math.floor(Math.random() * data.pokemon.length);
     const pokemon = data.pokemon[numeroAleatorio].pokemon;
     
-    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
-        .then(respuesta => respuesta.json())
-        .then(pokemonData => {
-            // Actualizar el nombre
-            document.querySelector('h1').textContent = `Nombre: ${pokemonData.name}`;
-            
-            // Actualizar la imagen
-            document.getElementById('pokemon-image').src = pokemonData.sprites.front_default;
-            
-            // Actualizar las características
-            document.getElementById('pokemon-height').textContent = `${pokemonData.height} m`;
-            document.getElementById('pokemon-weight').textContent = `${pokemonData.weight} kg`;
-            
-            // Formatear los tipos
-            const tipos = pokemonData.types.map(type => type.type.name).join(', ');
-            document.getElementById('pokemon-types').textContent = tipos;
-            
-            // Formatear las habilidades
-            const habilidades = pokemonData.abilities.map(ability => ability.ability.name).join(', ');
-            document.getElementById('pokemon-abilities').textContent = habilidades;
-            
-            console.log(pokemonData);
-        })
-        .catch(error => console.error('Error:', error));
+    fetch(`https://pokeapi.co/api/v2/pokemon/` + pokemon.name)
+        fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon.name)
+        .then(respuestaPokemon)
+        .catch(respuestaError);
 }
+
+function respuestaPokemon(respuesta) {
+    respuesta.json().then(mostrarPokemon);
+}
+
+function mostrarPokemon(pokemonData) {
+    // Actualizar el nombre
+    document.querySelector('h1').textContent = "Nombre: " + pokemonData.name;
+
+    // Actualizar la imagen
+    document.getElementById('pokemon-image').src = pokemonData.sprites.front_default;
+
+    // Actualizar las características
+    document.getElementById('pokemon-height').textContent = pokemonData.height + " m";
+    document.getElementById('pokemon-weight').textContent = pokemonData.weight + " kg";
+
+    // Formatear los tipos
+    var tipos = pokemonData.types.map(function(type) {
+        return type.type.name;
+    }).join(', ');
+    document.getElementById('pokemon-types').textContent = tipos;
+
+    // Formatear las habilidades
+    var habilidades = pokemonData.abilities.map(function(ability) {
+        return ability.ability.name;
+    }).join(', ');
+    document.getElementById('pokemon-abilities').textContent = habilidades;
+
+    console.log(pokemonData);
+}
+
 
 function respuestaError() {
     console.log("Error")
