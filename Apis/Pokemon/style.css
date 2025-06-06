@@ -6,10 +6,9 @@
     font-style: normal;
 }
 
-/* Estilo general del cuerpo */
 body {
     font-family: 'Pokemon Hollow', Arial, sans-serif;
-    background-color: #e3eefd; /* Fondo más suave tipo Pokémon */
+    background-color: #e3eefd; 
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -24,8 +23,6 @@ body {
     justify-items: center;
     margin-bottom: 10px;
 }
-
-/* Contenedor de los botones y radios */
 #botones {
     display: flex;
     flex-direction: column;
@@ -34,10 +31,6 @@ body {
     width: 100%;
     max-width: 700px;
 }
-
-
-
-/* Etiquetas de los tipos */
 label {
     padding: 12px 20px;
     background-color: #fffbe7;
@@ -52,17 +45,13 @@ label:hover {
     transform: scale(1.05);
 }
 
-/* Radios personalizados */
 input[type="radio"] {
     width: 18px;
     height: 18px;
-    accent-color: red; /* Cambia el color del radio */
+    accent-color: red; 
     vertical-align: middle;
 }
-
-/* Botón principal */
 button {
-    background: linear-gradient(90deg, #ffe066 60%, #f7da16 100%);
     border: 4px solid #3b4cca;
     color: #2d2d2d;
     padding: 15px 40px;
@@ -70,35 +59,27 @@ button {
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 0 4px 12px rgba(59,76,202,0.12);    
 }
 button:hover {
     background: linear-gradient(90deg, #f7da16 60%, #ffe066 100%);
     transform: scale(1.07);
 }
 
-/* Contenedor de la información del Pokémon */
 .pokemon-container {
     background-color: white;
     padding: 30px 40px;
     margin-top: 30px;
     text-align: center;
     border-radius: 30px;
-    box-shadow: 0 8px 24px rgba(59,76,202,0.10);
     max-width: 400px;
     width: 100%;
 }
-
-/* Título principal */
 h1 {
     color: #f7da16;
     font-weight: bold;
     margin: 20px 0;
-    text-shadow: 2px 2px 0 #3b4cca, 4px 4px 0 #fffbe7;
     letter-spacing: 2px;
 }
-
-/* Imagen del Pokémon */
 #pokemon-image {
     width: 220px;
     height: 220px;
@@ -110,7 +91,6 @@ h1 {
     box-shadow: 0 2px 8px rgba(59,76,202,0.10);
 }
 
-/* Estadísticas del Pokémon */
 .pokemon-stats {
     text-align: left;
     margin: 0 auto;
@@ -119,5 +99,4 @@ h1 {
     background: #f8f9fa;
     border-radius: 15px;
     padding: 15px 20px;
-    box-shadow: 0 2px 8px rgba(59,76,202,0.05);
 }
